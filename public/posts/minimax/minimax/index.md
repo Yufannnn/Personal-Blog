@@ -1,24 +1,5 @@
----
-weight: 1
-title: "The power of Iterative Deepening Minimax search with Alpha Beta Pruning :boom:"
-date: 2022-09-11
-lastmod: 2022-09-11
-draft: false
-author: "Zhu Yufan"
-description: "Nothing Much, just a short post to remember the day when I manage to bench 90KG for reps :muscle:"
-featuredImage: "Minimax.png"
-featuredImagePreview: "Minimax.png"
+# The power of Iterative Deepening Minimax search with Alpha Beta Pruning :boom:
 
-tags: ["computer science", "algorithm", "AI"]
-categories: ["Academia"]
-
-lightgallery: true
-linkToMarkdown: false
-
-toc:
-  auto: false
-
----
 I did a mini project when taking CS2109s (Introduction to AI and ML), where I built an AI agent for a simple board game, Breakthrough, with iterative deepening minimax search algorithm. What it can achieve blew my mind!
 <!--more-->
 
@@ -193,3 +174,4 @@ My AI agent is able to defeat all of them around 20 steps, it really surprised m
 ### Referenece
 <https://www.codeproject.com/Articles/37024/Simple-AI-for-the-Game-of-Breakthrough>.
 I have gained much high-level inspiration from this article, especially for my evaluation function but I have implemented all the algorithms on my own. :wink:
+

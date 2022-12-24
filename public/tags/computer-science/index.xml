@@ -1,0 +1,58 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>computer science - Tag - Yufan&#39;s Blog</title>
+        <link>http://yufannnn.github.io/tags/computer-science/</link>
+        <description>computer science - Tag - Yufan&#39;s Blog</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>e0773591@u.nus.edu (Zhu Yufan)</managingEditor>
+            <webMaster>e0773591@u.nus.edu (Zhu Yufan)</webMaster><copyright>Zhu Yufan 2022</copyright><lastBuildDate>Mon, 14 Nov 2022 00:00:00 &#43;0000</lastBuildDate><atom:link href="http://yufannnn.github.io/tags/computer-science/" rel="self" type="application/rss+xml" /><item>
+    <title>My Experience of being a Teaching Assistant in School of Computing :thinking:</title>
+    <link>http://yufannnn.github.io/posts/ta/ta/</link>
+    <pubDate>Mon, 14 Nov 2022 00:00:00 &#43;0000</pubDate>
+    <author>Zhu Yufan</author>
+    <guid>http://yufannnn.github.io/posts/ta/ta/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/TA.jpg" referrerpolicy="no-referrer">
+            </div><p>Last week, I finished conducting my last tutorial session and makring last set of homework as A Teaching Assitant in School of Computing. I want to write this post to share my experienceof being a Teaching Assitant and how did I got an offer from SOC.</p>]]></description>
+</item>
+<item>
+    <title>Unexpected Use of Zobrist Hashing :eyes:</title>
+    <link>http://yufannnn.github.io/posts/zobrist/zobrist/</link>
+    <pubDate>Mon, 17 Oct 2022 00:00:00 &#43;0000</pubDate>
+    <author>Zhu Yufan</author>
+    <guid>http://yufannnn.github.io/posts/zobrist/zobrist/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/Zobrist.jpg" referrerpolicy="no-referrer">
+            </div><p>This post is kind of a following up to the previous post. I found a surprising question where Zobrist hashing is applicable. Alert: this post is going to be a bit technical!</p>]]></description>
+</item>
+<item>
+    <title>The power of Iterative Deepening Minimax search with Alpha Beta Pruning :boom:</title>
+    <link>http://yufannnn.github.io/posts/minimax/minimax/</link>
+    <pubDate>Sun, 11 Sep 2022 00:00:00 &#43;0000</pubDate>
+    <author>Zhu Yufan</author>
+    <guid>http://yufannnn.github.io/posts/minimax/minimax/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/Minimax.png" referrerpolicy="no-referrer">
+            </div><p>I did a mini project when taking CS2109s (Introduction to AI and ML), where I built an AI agent for a simple board game, Breakthrough, with iterative deepening minimax search algorithm. What it can achieve blew my mind!</p>]]></description>
+</item>
+<item>
+    <title>My Experience of Matriculation to NUS Computer Science :sunglasses:</title>
+    <link>http://yufannnn.github.io/posts/matriculation/nuscs/</link>
+    <pubDate>Sat, 26 Feb 2022 00:00:00 &#43;0000</pubDate>
+    <author>Zhu Yufan</author>
+    <guid>http://yufannnn.github.io/posts/matriculation/nuscs/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/SOC.jpg" referrerpolicy="no-referrer">
+            </div><p>Check out this post to find out how did I get accept by NUS CS and receive the S&amp;T Merit Scholarship. This post may be expecially applicable for international students study in Singapore.</p>]]></description>
+</item>
+<item>
+    <title>Modules that I have taken for each semester in NUS :eyes:</title>
+    <link>http://yufannnn.github.io/posts/nusmodules/nusmodules/</link>
+    <pubDate>Sat, 15 Jan 2022 00:00:00 &#43;0000</pubDate>
+    <author>Zhu Yufan</author>
+    <guid>http://yufannnn.github.io/posts/nusmodules/nusmodules/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/Mods.jpg" referrerpolicy="no-referrer">
+            </div><p>This is not a very formal post, just keeping track of all the modules that I have taken across the years.</p>]]></description>
+</item>
+</channel>
+</rss>
