@@ -1,0 +1,177 @@
+#!/bin/python3
+
+import math
+import os
+import random
+import re
+import sys
+
+
+
+#
+# Complete the 'getMaximumDistinctCount' function below.
+#
+# The function is expected to return an INTEGER.
+# The function accepts following parameters:
+#  1. INTEGER_ARRAY a
+#  2. INTEGER_ARRAY b
+#  3. INTEGER k
+#
+
+from collections import Counter
+
+def getMaximumDistinctCount(a, b, k):
+    a_len = len(Counter(a).keys())
+    remain = len(a) - a_len
+    tot_len = len(Counter(a + b).keys())
+    
+    return a_len + min(k, tot_len - a_len, remain)
+    
+
+if __name__ == '__main__':
+    fptr = open(os.environ['OUTPUT_PATH'], 'w')
+
+    a_count = int(input().strip())
+
+    a = []
+
+    for _ in range(a_count):
+        a_item = int(input().strip())
+        a.append(a_item)
+
+    b_count = int(input().strip())
+
+    b = []
+
+    for _ in range(b_count):
+        b_item = int(input().strip())
+        b.append(b_item)
+
+    k = int(input().strip())
+
+    result = getMaximumDistinctCount(a, b, k)
+
+    fptr.write(str(result) + '\n')
+
+    fptr.close()
+
+
+#!/bin/python3
+
+import math
+import os
+import random
+import re
+import sys
+
+
+
+#
+# Complete the 'findTheString' function below.
+#
+# The function is expected to return a STRING.
+# The function accepts 2D_INTEGER_ARRAY lcp as parameter.
+#
+
+def findTheString(lcp):
+    size = len(lcp)
+    
+    def isValid():
+        for i in range(size):
+            for j in range(i + 1):
+                if lcp[i][j] != lcp[j][i]:
+                    return False
+                if lcp[i][j] > size - i or lcp[i][j] > size - j:
+                    return False
+                if i == j:
+                    if i + lcp[i][j] != size:
+                        return False
+        return True
+    
+    if not isValid():
+        return "Impossible"
+    
+    res = '*' * size
+    listRes = list(res)
+    
+    for i in range(size):
+        if listRes[i] == '*':
+            listRes[i] = chr(ord('a') + i % 26)
+        for j in range(i + 1, size):
+            if lcp[i][j] != 0 and listRes[j] == '*':
+                listRes[j] = chr(ord('a') + i % 26)
+               
+    return ''.join(listRes)
+    
+
+if __name__ == '__main__':
+    fptr = open(os.environ['OUTPUT_PATH'], 'w')
+
+    lcp_rows = int(input().strip())
+    lcp_columns = int(input().strip())
+
+    lcp = []
+
+    for _ in range(lcp_rows):
+        lcp.append(list(map(int, input().rstrip().split())))
+
+    result = findTheString(lcp)
+
+    fptr.write(result + '\n')
+
+    fptr.close()
+
+
+
+#!/bin/python3
+
+import math
+import os
+import random
+import re
+import sys
+
+
+
+#
+# Complete the 'findMaxSubsegmentsCount' function below.
+#
+# The function is expected to return an INTEGER.
+# The function accepts INTEGER_ARRAY arr as parameter.
+#
+
+import math
+
+def findMaxSubsegmentsCount(arr):
+    # Write your code here
+    size = len(arr)
+    maxVal = -1
+    dp = [0] * (size + 1)
+    dp[size] = math.inf
+    res = 0
+    
+    for i in range(size - 1, -1, -1):
+        dp[i] = min(dp[i + 1], arr[i])
+    
+    for i, val in enumerate(arr):
+        if val > maxVal:
+            maxVal = val
+        if (maxVal <= dp[i + 1]):
+            res += 1
+    return res
+if __name__ == '__main__':
+    fptr = open(os.environ['OUTPUT_PATH'], 'w')
+
+    arr_count = int(input().strip())
+
+    arr = []
+
+    for _ in range(arr_count):
+        arr_item = int(input().strip())
+        arr.append(arr_item)
+
+    result = findMaxSubsegmentsCount(arr)
+
+    fptr.write(str(result) + '\n')
+
+    fptr.close()
