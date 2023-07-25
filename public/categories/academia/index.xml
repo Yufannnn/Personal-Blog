@@ -5,14 +5,16 @@
         <description>Academia - Category - Yufan&#39;s Blog</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>e0773591@u.nus.edu (Zhu Yufan)</managingEditor>
             <webMaster>e0773591@u.nus.edu (Zhu Yufan)</webMaster><copyright>Zhu Yufan 2022</copyright><lastBuildDate>Mon, 14 Nov 2022 00:00:00 &#43;0000</lastBuildDate><atom:link href="http://yufannnn.github.io/categories/academia/" rel="self" type="application/rss+xml" /><item>
-    <title>My Experience of being a Teaching Assistant in School of Computing :thinking:</title>
+    <title>My Experience as a Teaching Assistant in the School of Computing</title>
     <link>http://yufannnn.github.io/posts/ta/ta/</link>
     <pubDate>Mon, 14 Nov 2022 00:00:00 &#43;0000</pubDate>
     <author>Zhu Yufan</author>
     <guid>http://yufannnn.github.io/posts/ta/ta/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/TA.jpg" referrerpolicy="no-referrer">
-            </div><p>Last week, I finished conducting my last tutorial session and makring last set of homework as A Teaching Assitant in School of Computing. I want to write this post to share my experienceof being a Teaching Assitant and how did I got an offer from SOC.</p>]]></description>
+            </div>Last week, I completed my journey as a Teaching Assistant (TA) in the School of Computing. This role has been a valuable and rewarding experience, and I want to share my journey as a TA, including how I got the position and the insights I gained from this opportunity. 🎓
+The Module I Taught I served as a TA for the module CS1101S Programming Methodology. 🖥️
+CS1101S introduces the concepts of programming and computational problem-solving.]]></description>
 </item>
 <item>
     <title>Unexpected Use of Zobrist Hashing :eyes:</title>
@@ -22,27 +24,28 @@
     <guid>http://yufannnn.github.io/posts/zobrist/zobrist/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/Zobrist.jpg" referrerpolicy="no-referrer">
-            </div><p>This post is kind of a following up to the previous post. I found a surprising question where Zobrist hashing is applicable. Alert: this post is going to be a bit technical!</p>]]></description>
+            </div>I&rsquo;m excited to share a surprising discovery I made while working on a programming assignment for the CS3230 module, Design and Analysis of Algorithms, at NUS. This revelation involves the unexpected application of Zobrist Hashing, a technique primarily designed for board games, to efficiently solve a challenging problem unrelated to gaming. Get ready for a bit of technical insight!
+Revisiting Zobrist Hashing 🕹️ In my previous post, I shared my experiences developing an AI agent to play the board game &ldquo;Breakthrough&rdquo; for the CS2109S individual project.]]></description>
 </item>
 <item>
-    <title>The power of Iterative Deepening Minimax search with Alpha Beta Pruning :boom:</title>
+    <title>The Power of Iterative Deepening Minimax Search with Alpha-Beta Pruning 💥</title>
     <link>http://yufannnn.github.io/posts/minimax/minimax/</link>
     <pubDate>Sun, 11 Sep 2022 00:00:00 &#43;0000</pubDate>
     <author>Zhu Yufan</author>
     <guid>http://yufannnn.github.io/posts/minimax/minimax/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/Minimax.png" referrerpolicy="no-referrer">
-            </div><p>I did a mini project when taking CS2109s (Introduction to AI and ML), where I built an AI agent for a simple board game, Breakthrough, with iterative deepening minimax search algorithm. What it can achieve blew my mind!</p>]]></description>
+            </div><p>In my pursuit of knowledge in Computer Science, I undertook a mini-project during the course CS2109s (Introduction to AI and ML). The project aimed to build an AI agent for a simple yet intriguing board game called Breakthrough, implementing the iterative deepening minimax search algorithm with alpha-beta pruning. The capabilities of this AI agent left me amazed and eager to share my journey with you! 🌐🔍</p>]]></description>
 </item>
 <item>
-    <title>My Experience of Matriculation to NUS Computer Science :sunglasses:</title>
+    <title>My Journey to NUS Computer Science and the S&amp;T Scholarship 🕶️</title>
     <link>http://yufannnn.github.io/posts/matriculation/nuscs/</link>
     <pubDate>Sat, 26 Feb 2022 00:00:00 &#43;0000</pubDate>
     <author>Zhu Yufan</author>
     <guid>http://yufannnn.github.io/posts/matriculation/nuscs/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/SOC.jpg" referrerpolicy="no-referrer">
-            </div><p>Check out this post to find out how did I get accept by NUS CS and receive the S&amp;T Merit Scholarship. This post may be expecially applicable for international students study in Singapore.</p>]]></description>
+            </div><p>Welcome to my post, where I share my experience of getting accepted into NUS Computer Science and being awarded the prestigious S&amp;T Merit Scholarship. This journey might be especially relevant for international students studying in Singapore. 🌍✈️</p>]]></description>
 </item>
 <item>
     <title>Modules that I have taken for each semester in NUS :eyes:</title>

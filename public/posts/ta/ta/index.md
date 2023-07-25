@@ -1,50 +1,63 @@
-# My Experience of being a Teaching Assistant in School of Computing :thinking:
+# My Experience as a Teaching Assistant in the School of Computing
 
-Last week, I finished conducting my last tutorial session and makring last set of homework as A Teaching Assitant in School of Computing. I want to write this post to share my experienceof being a Teaching Assitant and how did I got an offer from SOC.
-<!--more-->
+
+Last week, I completed my journey as a Teaching Assistant (TA) in the School of Computing. This role has been a valuable and rewarding experience, and I want to share my journey as a TA, including how I got the position and the insights I gained from this opportunity. 🎓
 
 ### The Module I Taught
-**CS1101S Programming Methodology**
-{{< admonition type=quote title="CS1101S" open=True >}}
-This module introduces the concepts of programming and computational problem solving, and is the first and foremost introductory module to computing.
-{{< /admonition >}}
 
-### How Did I Even Get the Position 
+I served as a TA for the module **CS1101S Programming Methodology**. 🖥️
+
+> CS1101S introduces the concepts of programming and computational problem-solving. It serves as the first and foremost introductory module to computing. 🚀
+
+### How I Became a Teaching Assistant
+
 ##### Background
-Since CS1101S is essentially the first module that every Computer Science Student are supposed to take, except for those who have been exempted from this module, we have a really large cohort size, apporximately 700 student every year. Also, the professors of CS1101S believe that the size of the class should be kept small, less than or equals to eight students per class, for better class engagement. Therefore, they are also recruiting a large number of Teaching Assistants every year. Unlikely most other modules, where we have to apply via the SOC Manpower System or explicitly sending emails to the professor, CS1101s professors will open an portal to recruit Teaching Assistants. 
-##### Application Procedure 
-The portal will normally be open around November and December. Apart from basic information, like personal particulars, they will ask you to write about what characteristics a good teaching assistant should possess and what personal qualities you possess that could make you a good teaching assistant in the future. After the application, the professors will arrange an interview sesson in the subsequent sememster, if they are satified with the portfolio.
+
+CS1101S is a foundational module that every Computer Science student is expected to take, except for those who have been exempted. Due to its importance, the cohort size is significant, with approximately 700 students each year. To ensure better class engagement, the class size is kept small, with around eight students per class. Consequently, the module requires a large number of Teaching Assistants to support the students effectively. The professors open a recruitment portal to select the Teaching Assistants for CS1101S, distinguishing it from the application process of many other modules. 🎓
+
+##### Application Procedure
+
+The TA recruitment portal typically opens around November and December. Besides basic personal particulars, the application requires candidates to elaborate on the characteristics of a good teaching assistant and the personal qualities they possess that make them suitable for the role. After the application submission, the professors arrange interview sessions in the subsequent semester for shortlisted candidates. 📝
+
 ##### The Interview
-The interview can happen anytime from January to Apirl in the second sememster and the style of the interview is quite formal. The professor essentially wants to test whether I was able to express myself clearly and whether I know the concept of CS1101S thoroughly. The profess would pretend to be a confusing student and ask you to explain certain concepts, like recursion, environment model, time complexity and etc. 
 
-{{< admonition type=warning title="Unexpected Questions" open=true >}}
-the professor may ask very unexpected question, not difficult questions but some conceptual ones that people tend to neglect. The first question he asked me is the difference between a statment and an expression. :anguished:
-{{< /admonition >}}
+The interview usually takes place from January to April in the second semester. The interview is quite formal and aims to test the candidates' ability to express themselves clearly and their comprehension of CS1101S concepts. The professor may act as a confusing student and ask the candidates to explain various concepts, such as recursion, environment model, time complexity, and more. 💬
 
-The interview usually take place for half an hour and I heard that the passing rate is also very high. Don't worry if you didn't get an A for this module, it is perfectly possible to get an offer as Teaching Assistant with an A- grade.
+> 💡 Unexpected Questions: During the interview, the professor might ask unexpected conceptual questions. For instance, I was asked about the difference between a statement and an expression, a seemingly straightforward yet often overlooked distinction. 🤔
 
-### Workload? :thinking:
-I would said it varies large from person to person. I depends on how familiar your are with the content of the module and what style you want the tutorial to be. The workload maingly consists of three parts: conducting lessons, preparing lessons, and grading homework.
-- ***conducting lessons***: There is a ***2-hour tutorial every week***. I would first conduct a lecture recap for aroudn 20-30 minutes then let the students discuss their homework among themselve. Afterwards, I will release a in-class worksheet to let them try on the spot for another 20 minutes and explained the results for the remaining time. Personally, I feel that the workload of conducting lessons was actually quite manageable among others. Additionally, I conducted the lessons in such a way, where I will be explaining most of the stuff. I know some of the TA prefer to let the students themselves to speak more. 
-- ***preparing lessons***: the workload of preparing lessons are surprisingly high. Although I took the module only one year ago and I have learnt much throughout the year, it is only when I start to be TA that I realized that being able to teach others requires ***a much higher level understanding of the knowledge***. Luckily, I have a small group of 4 friends, who become TAs together with me this sememster. We met every Friday to plan out our lessons, discuss the concepts that we, ourselves, were not sure about, and make the slides for next weeks's lesson. We did not make the slides from scratch as the workload is going to be insane. We most adapted from our TA's slides of the previous batch, and adjusted them to fit the modification of new syllabus
-- ***grading homework***: This is where ***a lot of patience is needed***. We have multiply coding homework to grade every week on a platform for this module, called Source Academy. Since this is introductory module for CS, many students have little to no knowledge to programming. The approach and styling of their homework can be ***very very messy*** and most of them don't have a habit of commenting their code. :confused: It gave me a headache reading their code and trying to guess what they are supposed to do in the first few weeks. It did get much better in the second half of the semester where students are much familar with coding and computer science in general.
+The interview typically lasts for about half an hour, and the passing rate is generally high. It is essential to note that an A- grade in CS1101S does not hinder one from getting an offer as a Teaching Assistant. 🎯
 
-To summarize, personally, I do feel that the workload of being a Teaching Assistant for this module is comparable to ***taking a hardcore module myself***. 
+### Workload and Responsibilities
 
-### Experience and Skills I Gain from it
-By now, you may have the question that given the workload of it, it is even worthy to be a TA and why do I want to be a TA in the first place? My answer is definite! Yes! :laughing: I have gained my invaluable experiences thoughout the whole process!
-- ***Reinforce my Understanding of Fundamental CS Concept***: When being the Teaching Assistant year, I found that my understanding of many concepts last year was not adequate. For concept like continuation passing style, memoized streams, and Meta-Circular Evaluator. Although I managed to do many of the questions correctly in the exam, I did not genuinely know what is going on. This year, I have to anticipate the weird questions that student might ask me, which server a motivation for me study those fundamentals in a even deper level. 
-- ***Sharpen My Ability to Speak in Public***: As a non-native English speaker, I was always not that confident about my speakon English. This opportunity of being Teaching Assistant gives me a chance to regularly speak in public every week. I did feel that when it came to the end of the semester, speaking English becomes more and more natural to me :innocent:
-- ***Greatly Boost My Confidence***: The responsibility of being a tutor to a small group of people is a duty but also a great acknowledgement of my ability and all the efforst that I made throughout the year. When I went for the interview of the application of a student tutor in Raffles Baording School, I felt much confident when elaborating my stregths to the teachers. (btw, luckily, I also manage to get the offer for that job :wink:)
+The workload as a Teaching Assistant varies depending on one's familiarity with the module's content and preferred teaching style. It primarily consists of three aspects: conducting lessons, preparing lessons, and grading homework. 📚
 
-### And, Of Course, The Payment :yum:
-The payment consist of two parts: contact hours and non-contact hours both $40 per hour. Every week, I would have 2 contact hours and 2 non-contact hours and of course, you can get additional hours for invigilating exams and facilitating forum hours etc. The payment is not too much but also not too little; it can roughly cover my accomadation fee in Prince George's Park Residence. :relieved:
+- **Conducting Lessons**: There is a 2-hour tutorial session every week. During the session, I typically start with a lecture recap for around 20-30 minutes, followed by students discussing their homework among themselves. Next, I provide an in-class worksheet for them to solve on the spot, with the remaining time dedicated to explaining the solutions. The workload of conducting lessons is generally manageable, especially when actively guiding the students through most of the content. However, some Teaching Assistants prefer to adopt a more hands-off approach and encourage students to engage more actively in discussions. 🎒
 
-{{< admonition type=warning title="Relatively High Workload" open=true >}}
-The payment in SOC is pretty standard, $40 per hour, across different modules. I have compared with my friends, who are Teaching Assistant for other modules, and found that CS1101s TA do have relatively higher workload than other. Therefore, it may not be a wise choice to be CS1101S TA, if you are coming for the money alone :flushed:
-{{< /admonition >}}
+- **Preparing Lessons**: The workload of preparing lessons is surprisingly significant. Being able to teach effectively requires a deeper understanding of the subject matter than simply knowing the concepts. As a result, I formed a small group with four friends who also became TAs for this module. We met every Friday to plan our lessons, discuss challenging concepts, and create slides for the upcoming tutorials. Instead of starting from scratch, we adapted slides from the previous batch of TAs and adjusted them to fit the modifications in the syllabus. 📊
 
+- **Grading Homework**: Grading homework requires a great deal of patience, as CS1101S is an introductory module, and many students have little to no programming experience. The coding style of their homework can be quite messy, and some students lack the habit of commenting their code, making it challenging to understand their solutions. However, as the semester progresses, students become more familiar with coding and computer science, which improves the grading experience. 📝
 
+To summarize, being a Teaching Assistant for CS1101S can be compared to taking a challenging module in terms of workload and responsibilities. 💼
 
+### Insights and Skills Gained
 
+Being a Teaching Assistant provided me with valuable experiences and insights: 🌟
+
+- **Reinforced Understanding of Fundamental CS Concepts**: As a TA, I discovered that my understanding of certain concepts from the previous year was not as comprehensive as I had thought. Explaining concepts to students requires a deeper level of understanding, motivating me to study those fundamentals in greater depth. 📘
+
+- **Improved Public Speaking**: As a non-native English speaker, I had limited confidence in my spoken English. However, this opportunity allowed me to speak in public regularly, which significantly improved my ability to communicate effectively. 🗣️
+
+- **Boosted Confidence**: Being responsible for guiding a group of students was not only a duty but also a validation of my abilities and efforts throughout the year. This experience boosted my confidence and provided a positive impact in various aspects of my life. 🚀
+
+### Compensation 😋
+
+The compensation for being a TA consists of two parts: contact hours and non-contact hours, each at a rate of $40 per hour. Typically, I had 2 contact hours and 2 non-contact hours per week. Additional hours could be earned through tasks like invigilating exams and facilitating forum hours. The payment is reasonable and can cover my accommodation fees at Prince George's Park Residence. 💰
+
+> ⚠️ Relatively High Workload: While the payment is standard across different modules in the School of Computing, it's essential to note that being a TA for CS1101S might entail a relatively higher workload compared to other modules. Therefore, if one is seeking the position solely for financial reasons, it may not be the ideal choice. ⚠️
+
+In conclusion, my experience as a Teaching Assistant for CS1101S was both valuable
+
+ and rewarding. It provided me with opportunities for personal growth, a deeper understanding of computer science concepts, improved public speaking skills, and boosted confidence. The journey as a TA has been enriching, and I look forward to exploring further avenues for growth in the future. 🌱🤝
+
+If you have any questions or want to know more about my experiences, feel free to reach out! 📩😊
 

@@ -4,17 +4,17 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="robots" content="noodp" />
-        <title>The power of Iterative Deepening Minimax search with Alpha Beta Pruning :boom: - Yufan&#39;s Blog</title><meta name="Description" content="Nothing Much, just a short post to remember the day when I manage to bench 90KG for reps :muscle:"><meta property="og:title" content="The power of Iterative Deepening Minimax search with Alpha Beta Pruning :boom:" />
-<meta property="og:description" content="Nothing Much, just a short post to remember the day when I manage to bench 90KG for reps :muscle:" />
+        <title>The Power of Iterative Deepening Minimax Search with Alpha-Beta Pruning 💥 - Yufan&#39;s Blog</title><meta name="Description" content="A Journey into AI: Implementing Iterative Deepening Minimax Search with Alpha-Beta Pruning for Breakthrough 🕶️"><meta property="og:title" content="The Power of Iterative Deepening Minimax Search with Alpha-Beta Pruning 💥" />
+<meta property="og:description" content="A Journey into AI: Implementing Iterative Deepening Minimax Search with Alpha-Beta Pruning for Breakthrough 🕶️" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://yufannnn.github.io/posts/minimax/minimax/" /><meta property="og:image" content="http://yufannnn.github.io/logo.png"/><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2022-09-11T00:00:00+00:00" />
-<meta property="article:modified_time" content="2022-12-23T22:38:56+08:00" /><meta property="og:site_name" content="Zhu Yufan&#39;s Blog" />
+<meta property="article:modified_time" content="2022-12-24T19:33:54+08:00" /><meta property="og:site_name" content="Zhu Yufan&#39;s Blog" />
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="http://yufannnn.github.io/logo.png"/>
 
-<meta name="twitter:title" content="The power of Iterative Deepening Minimax search with Alpha Beta Pruning :boom:"/>
-<meta name="twitter:description" content="Nothing Much, just a short post to remember the day when I manage to bench 90KG for reps :muscle:"/>
+<meta name="twitter:title" content="The Power of Iterative Deepening Minimax Search with Alpha-Beta Pruning 💥"/>
+<meta name="twitter:description" content="A Journey into AI: Implementing Iterative Deepening Minimax Search with Alpha-Beta Pruning for Breakthrough 🕶️"/>
 <meta name="application-name" content="Yufan&#39;s Blog">
 <meta name="apple-mobile-web-app-title" content="Yufan&#39;s Blog"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#2b5797"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -24,18 +24,18 @@
     {
         "@context": "http://schema.org",
         "@type": "BlogPosting",
-        "headline": "The power of Iterative Deepening Minimax search with Alpha Beta Pruning :boom:",
+        "headline": "The Power of Iterative Deepening Minimax Search with Alpha-Beta Pruning 💥",
         "inLanguage": "en",
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "http:\/\/yufannnn.github.io\/posts\/minimax\/minimax\/"
-        },"genre": "posts","keywords": "computer science, algorithm, AI","wordcount":  1796 ,
-        "url": "http:\/\/yufannnn.github.io\/posts\/minimax\/minimax\/","datePublished": "2022-09-11T00:00:00+00:00","dateModified": "2022-12-23T22:38:56+08:00","license": "Zhu Yufan 2022","publisher": {
+        },"genre": "posts","keywords": "computer science, algorithm, AI","wordcount":  3189 ,
+        "url": "http:\/\/yufannnn.github.io\/posts\/minimax\/minimax\/","datePublished": "2022-09-11T00:00:00+00:00","dateModified": "2022-12-24T19:33:54+08:00","license": "Zhu Yufan 2022","publisher": {
             "@type": "Organization",
             "name": "xxxx","logo": "http:\/\/yufannnn.github.io\/images\/avatar.png"},"author": {
                 "@type": "Person",
                 "name": "Zhu Yufan"
-            },"description": "Nothing Much, just a short post to remember the day when I manage to bench 90KG for reps :muscle:"
+            },"description": "A Journey into AI: Implementing Iterative Deepening Minimax Search with Alpha-Beta Pruning for Breakthrough 🕶️"
     }
     </script></head>
     <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
@@ -101,10 +101,10 @@
                 <div class="container"><div class="toc" id="toc-auto">
             <h2 class="toc-title">Contents</h2>
             <div class="toc-content always-active" id="toc-content-auto"></div>
-        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">The power of Iterative Deepening Minimax search with Alpha Beta Pruning 💥</h1><div class="post-meta">
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">The Power of Iterative Deepening Minimax Search with Alpha-Beta Pruning 💥</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Zhu Yufan</a></span>&nbsp;<span class="post-category">included in <a href="/categories/academia/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Academia</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2022-09-11">2022-09-11</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;1796 words&nbsp;
-                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;9 minutes&nbsp;</div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2022-09-11">2022-09-11</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;3189 words&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;15 minutes&nbsp;</div>
         </div><div class="featured-image"><img
         class="lazyload"
         src="/svg/loading.min.svg"
@@ -112,7 +112,7 @@
         data-srcset="/Minimax.png, /Minimax.png 1.5x, /Minimax.png 2x"
         data-sizes="auto"
         alt="/Minimax.png"
-        title="Nothing Much, just a short post to remember the day when I manage to bench 90KG for reps :muscle:" width="400" height="182" /></div><div class="details toc" id="toc-static"  data-kept="">
+        title="A Journey into AI: Implementing Iterative Deepening Minimax Search with Alpha-Beta Pruning for Breakthrough 🕶️" width="400" height="182" /></div><div class="details toc" id="toc-static"  data-kept="">
                 <div class="details-summary toc-title">
                     <span>Contents</span>
                     <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
@@ -121,57 +121,137 @@
   <ul>
     <li>
       <ul>
-        <li><a href="#the-board-game">The Board Game</a>
+        <li><a href="#the-board-game-breakthrough-">The Board Game: Breakthrough 🎲</a>
           <ul>
             <li>
               <ul>
-                <li><a href="#rules-and-winning-condition-of-the-game">Rules and Winning condition of the game</a></li>
+                <li><a href="#rules-and-winning-condition-of-the-game-">Rules and Winning Condition of the Game 🏆</a></li>
+                <li><a href="#winning-conditions-">Winning Conditions 🏆</a></li>
               </ul>
             </li>
           </ul>
         </li>
-        <li><a href="#pseudo-code-of-my-algorithm">Pseudo Code of My Algorithm</a></li>
-        <li><a href="#the-general-approah-i-took">The General Approah I took</a></li>
-        <li><a href="#some-constraints-given-by-the-questions">Some Constraints Given by the questions</a></li>
-        <li><a href="#some-additional-features-that-i-included-to-further-improve-the-performance">Some Additional Features that I Included to Further Improve the performance</a></li>
-        <li><a href="#the-heuristic-function">The Heuristic Function!!!</a></li>
-        <li><a href="#the-testing">The Testing</a></li>
-        <li><a href="#some-features-that-i-didnt-have-time-to-implement">Some Features that I Didn&rsquo;t have Time to Implement</a></li>
-        <li><a href="#referenece">Referenece</a></li>
+        <li><a href="#the-general-approach-i-took-">The General Approach I Took 🚀</a>
+          <ul>
+            <li><a href="#minimax-search-algorithm-">Minimax Search Algorithm 🌀</a></li>
+            <li><a href="#alpha-beta-pruning-">Alpha-Beta Pruning 🍃</a></li>
+            <li><a href="#the-heuristic-evaluation-function-">The Heuristic Evaluation Function 🧠</a></li>
+            <li><a href="#factors-considered-in-the-heuristic-function-">Factors Considered in the Heuristic Function 📊</a></li>
+          </ul>
+        </li>
+        <li><a href="#balancing-the-weightage-of-heuristic-factors-">Balancing the Weightage of Heuristic Factors ⚖️</a></li>
+        <li><a href="#discovering-non-obvious-features-">Discovering Non-obvious Features 🕵️‍♂️</a></li>
+        <li><a href="#dealing-with-time-constraints-">Dealing with Time Constraints ⏰</a></li>
+        <li><a href="#additional-features-to-enhance-performance-">Additional Features to Enhance Performance 🔍</a></li>
+        <li><a href="#pseudo-code-of-my-algorithm-">Pseudo Code of My Algorithm 📝</a>
+          <ul>
+            <li><a href="#enhancements-left-unexplored-">Enhancements Left Unexplored 🚧</a></li>
+          </ul>
+        </li>
+        <li><a href="#the-testing-unraveling-the-capabilities-">The Testing: Unraveling the Capabilities 🧪🎮</a></li>
+        <li><a href="#the-naive-players-">The Naive Players 👶</a>
+          <ul>
+            <li><a href="#astounding-results-">Astounding Results 🌟</a></li>
+          </ul>
+        </li>
+        <li><a href="#conclusion-and-reference-">Conclusion and Reference 🏁📚</a></li>
       </ul>
     </li>
   </ul>
 </nav></div>
-            </div><div class="content" id="content"><p>I did a mini project when taking CS2109s (Introduction to AI and ML), where I built an AI agent for a simple board game, Breakthrough, with iterative deepening minimax search algorithm. What it can achieve blew my mind!</p>
-<h3 id="the-board-game">The Board Game</h3>
-<p>Breakthrough!!
-<figure><a class="lightgallery" href="/breakthrough.jpg" title="/breakthrough.jpg" data-thumbnail="/breakthrough.jpg" data-sub-html="<h2>breakthrough (image)</h2>">
-        <img
-            class="lazyload"
-            src="/svg/loading.min.svg"
-            data-src="/breakthrough.jpg"
-            data-srcset="/breakthrough.jpg, /breakthrough.jpg 1.5x, /breakthrough.jpg 2x"
-            data-sizes="auto"
-            alt="/breakthrough.jpg" width="370" height="370" />
-    </a><figcaption class="image-caption">breakthrough (<code>image</code>)</figcaption>
-    </figure></p>
-<div class="details admonition note open">
-        <div class="details-summary admonition-title">
-            <i class="icon fas fa-pencil-alt fa-fw" aria-hidden="true"></i>Breakthrough<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
-        </div>
-        <div class="details-content">
-            <div class="admonition-content">Breakthrough is an abstract strategy board game invented by Dan Troyka in 2000 and made available as a Zillions of Games file (ZRF). It won the 2001 8x8 Game Design Competition, even though the game was originally played on a 7x7 board, as it is trivially extensible to larger board sizes.   &ndash; from WikiPedia</div>
-        </div>
-    </div>
-<h5 id="rules-and-winning-condition-of-the-game">Rules and Winning condition of the game</h5>
+            </div><div class="content" id="content"><p>In my pursuit of knowledge in Computer Science, I undertook a mini-project during the course CS2109s (Introduction to AI and ML). The project aimed to build an AI agent for a simple yet intriguing board game called Breakthrough, implementing the iterative deepening minimax search algorithm with alpha-beta pruning. The capabilities of this AI agent left me amazed and eager to share my journey with you! 🌐🔍</p>
+<h3 id="the-board-game-breakthrough-">The Board Game: Breakthrough 🎲</h3>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/breakthrough.jpg"
+        data-srcset="/breakthrough.jpg, /breakthrough.jpg 1.5x, /breakthrough.jpg 2x"
+        data-sizes="auto"
+        alt="/breakthrough.jpg"
+        title="Breakthrough" width="370" height="370" /></p>
+<p>Breakthrough is an abstract strategy board game that was invented by Dan Troyka in 2000 and made available as a Zillions of Games file (ZRF). It has gained popularity for its simplicity yet strategic depth, making it an intriguing challenge for players of all ages.</p>
+<h5 id="rules-and-winning-condition-of-the-game-">Rules and Winning Condition of the Game 🏆</h5>
+<p>Breakthrough is played on an 8x8 square board, although it was originally designed for a 7x7 board, allowing for easy scalability to larger sizes. Each player controls a set of pawns, represented by black and white pieces, and the goal is to outmaneuver the opponent to achieve victory.</p>
+<p>The game starts with the pawns of both players positioned at opposite ends of the board. The rules are as follows:</p>
+<ol>
+<li>
+<p><strong>Piece Movement:</strong> Players take turns moving one of their pawns in a forward direction. A pawn can move one square either vertically, horizontally, or diagonally, as long as the target square is unoccupied. However, diagonal movement can only be used for capturing an opponent&rsquo;s pawn.</p>
+</li>
+<li>
+<p><strong>Capture:</strong> If a player&rsquo;s pawn lands on a square diagonally adjacent to an opponent&rsquo;s pawn, it captures the opponent&rsquo;s pawn, removing it from the board. Capturing is an essential tactic for gaining an advantage in the game.</p>
+</li>
+<li>
+<p><strong>Promotion:</strong> When a player&rsquo;s pawn reaches the opponent&rsquo;s home row, it gets promoted to a &ldquo;super pawn.&rdquo; The super pawn gains additional movement options, allowing it to move both forward and backward one square, adding more strategic possibilities.</p>
+</li>
+</ol>
+<h5 id="winning-conditions-">Winning Conditions 🏆</h5>
+<p>Breakthrough offers two ways to claim victory:</p>
+<ol>
+<li>
+<p><strong>Reaching the Opponent&rsquo;s Home Row:</strong> The first player to advance one of their pawns to the opponent&rsquo;s home row wins the game immediately. This approach emphasizes aggressive and rapid advancement.</p>
+</li>
+<li>
+<p><strong>Eliminating the Opponent&rsquo;s Pawns:</strong> Alternatively, a player can win by eliminating all of the opponent&rsquo;s pawns, leaving them with no legal moves. This approach emphasizes careful planning and tactical precision.</p>
+</li>
+</ol>
+<p>The game&rsquo;s simplicity belies its complexity, as players must carefully balance offense and defense while predicting their opponent&rsquo;s moves. Breakthrough provides an engaging and intellectually stimulating experience, making it a favorite among strategy game enthusiasts. Whether you are a seasoned player or a newcomer, Breakthrough promises a rewarding and enjoyable gaming session.</p>
+<h3 id="the-general-approach-i-took-">The General Approach I Took 🚀</h3>
+<p>The foundation of my AI agent&rsquo;s remarkable performance in Breakthrough lies in the iterative deepening minimax search algorithm with alpha-beta pruning. This combination empowers the agent to intelligently explore the game tree and make strategic decisions based on the evaluation of each board state.</p>
+<h4 id="minimax-search-algorithm-">Minimax Search Algorithm 🌀</h4>
+<p>At the core of my AI agent&rsquo;s decision-making process is the minimax search algorithm, a fundamental technique used in two-player, zero-sum games like Breakthrough. The algorithm explores the possible moves and outcomes of the game tree to find the best move for the current player, assuming the opponent will make optimal moves. The objective is to maximize the agent&rsquo;s evaluation score while minimizing the opponent&rsquo;s score.</p>
+<h4 id="alpha-beta-pruning-">Alpha-Beta Pruning 🍃</h4>
+<p>To address the computational complexity of the minimax algorithm, especially in games with a large branching factor, I implemented alpha-beta pruning. This intelligent technique prunes or cuts off parts of the game tree that are proven to be irrelevant to the final decision. By reducing the number of nodes explored, alpha-beta pruning significantly improves the efficiency of the search, allowing the AI agent to explore deeper into the game tree within the specified time constraints.</p>
+<h4 id="the-heuristic-evaluation-function-">The Heuristic Evaluation Function 🧠</h4>
+<p>To evaluate the desirability of each board state, I carefully designed a heuristic evaluation function. This function takes into account various factors that influence the value of a particular board state. By assessing the characteristics of the board, the heuristic function aims to approximate the true value of the board state, enabling the AI agent to make informed and strategic decisions.</p>
+<h4 id="factors-considered-in-the-heuristic-function-">Factors Considered in the Heuristic Function 📊</h4>
+<p>To create a comprehensive evaluation, the heuristic function considers multiple factors:</p>
+<ol>
+<li>
+<p><strong>Piece Score:</strong> This factor quantifies the difference in the number of black pawns and white pawns on the board. A higher piece score indicates an advantageous position for the black player, as it signifies a greater number of pieces compared to the opponent.</p>
+</li>
+<li>
+<p><strong>Position Score:</strong> The position score represents the difference in the sum of distances of each black pawn from its baseline and the sum of distances of white pawns from their baseline. A higher position score implies a better positional advantage for the black player, positioning its pawns closer to achieving the winning condition.</p>
+</li>
+<li>
+<p><strong>Offensive Score:</strong> This score reflects the farthest distance from any black pawn to the opponent&rsquo;s baseline. A higher offensive score indicates that black pawns are positioned closer to the opponent&rsquo;s home row, bringing them closer to victory.</p>
+</li>
+<li>
+<p><strong>Defensive Score:</strong> Conversely, the defensive score represents the closest distance from any white pawn to the black pawn&rsquo;s baseline. A higher defensive score suggests a stronger defensive position for the black player, safeguarding its pawns from imminent threats.</p>
+</li>
+<li>
+<p><strong>Danger Penalty:</strong> The heuristic function penalizes board states where white pawns can attack black pawns in the next turn, as such a situation endangers the black pawns and might lead to potential losses.</p>
+</li>
+<li>
+<p><strong>Protected Bonus:</strong> On the other hand, if an endangered black pawn is protected by other black pawns, the heuristic function rewards the state. This strategic move lures the opponent into capturing a pawn that can be immediately counterattacked, turning a potentially adverse situation into an advantageous one.</p>
+</li>
+<li>
+<p><strong>Empty Column Penalty:</strong> The heuristic function penalizes boards with empty columns, as they can create difficulties in defense and counterattacks.</p>
+</li>
+<li>
+<p><strong>Empty White Column Penalty:</strong> Additionally, the heuristic function doubles the penalization for columns with a white pawn but no black pawn, as this creates a vulnerable position for the black player, inviting potential threats.</p>
+</li>
+</ol>
+<h3 id="balancing-the-weightage-of-heuristic-factors-">Balancing the Weightage of Heuristic Factors ⚖️</h3>
+<p>The effectiveness of the heuristic evaluation function relies on the careful balance of weightage for each factor. I conducted rigorous testing and experimented with different weightage values to find an optimal configuration that produced superior performance. This iterative process allowed my AI agent to fine-tune its evaluation function and demonstrate strategic prowess in the game of Breakthrough.</p>
+<h3 id="discovering-non-obvious-features-">Discovering Non-obvious Features 🕵️‍♂️</h3>
+<p>As I played the game myself, I discovered several non-obvious features of the board that significantly influence the evaluation function and overall gameplay:</p>
 <ul>
-<li>each play moving <em><strong>one piece per turn</strong></em>.</li>
-<li>a pawn may move one pace <em><strong>straight or diagonally forward</strong></em>.</li>
-<li>a piece can move into a square containing opponent&rsquo;s pawn and capture it, if the square is <em><strong>diaganoally forward</strong></em></li>
-<li>winning condition 1: The first player to reacht the opponent&rsquo;s home row</li>
-<li>winning condition 2: the other player has no more pawns.</li>
+<li>
+<p><strong>Danger Penalty:</strong> Calculating the number of white pawns that can attack black pawns in the next turn helps identify imminent threats. A higher danger penalty penalizes the state more heavily, indicating a precarious situation where the black pawns are at risk of being captured.</p>
+</li>
+<li>
+<p><strong>Protected Bonus:</strong> The protected bonus becomes instrumental in determining whether an endangered black pawn is being protected by other black pawns. If a black pawn is endangered but protected, we reward the state instead, as it offers the opportunity for a counterattack. This strategic maneuver can be especially effective against opponents that prioritize attacking.</p>
+</li>
+<li>
+<p><strong>Empty Column Penalty:</strong> The presence of empty columns on the board complicates defensive and offensive tactics, making it difficult to block opponents on a particular column or launch attacks on neighboring columns. Penalizing boards with empty columns discourages the player from leaving columns without black pawns, promoting better strategic play.</p>
+</li>
 </ul>
-<h3 id="pseudo-code-of-my-algorithm">Pseudo Code of My Algorithm</h3>
+<h3 id="dealing-with-time-constraints-">Dealing with Time Constraints ⏰</h3>
+<p>Given the project&rsquo;s strict time constraint of 3 seconds for each move, regardless of the machine&rsquo;s processing power, I implemented iterative deepening. This approach gradually increases the search depth within the specified time frame, striking a balance between search depth and computational efficiency. By stopping the search and returning the best move found when nearing the 3-second limit, the AI agent adheres to the time constraint without compromising its decision-making quality.</p>
+<h3 id="additional-features-to-enhance-performance-">Additional Features to Enhance Performance 🔍</h3>
+<p>To further optimize the alpha-beta algorithm&rsquo;s pruning, I introduced moving ordering. This technique prioritizes the possible moves of a board by storing them in a priority queue, sorted according to each board&rsquo;s score in descending order. By evaluating the most promising move first, the algorithm is more likely to achieve pruning and significantly improves overall efficiency.</p>
+<p>Additionally, to speed up the evaluation process, I implemented memoization in the <code>evaluate_board</code> function. This technique stores the score of each board as a dictionary in the <code>PlayerAI()</code> class, avoiding repeated calls to the <code>evaluate_board</code> function for identical boards at the base cases. With the manageable number of possible states in the 8x8 Breakthrough game, this approach dramatically reduces computation time and optimizes the AI agent&rsquo;s performance.</p>
+<h3 id="pseudo-code-of-my-algorithm-">Pseudo Code of My Algorithm 📝</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -241,19 +321,25 @@
 </span><span class="lnt">65
 </span><span class="lnt">66
 </span><span class="lnt">67
+</span><span class="lnt">68
+</span><span class="lnt">69
+</span><span class="lnt">70
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">PlayerAI</span><span class="p">:</span>
-</span></span><span class="line"><span class="cl">    <span class="k">def</span> <span class="nf">evaluate_state</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">board</span><span class="p">):</span>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># Pseudo Code of the Iterative Deepening Minimax Search Algorithm with Alpha-Beta Pruning</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">    <span class="c1"># generate all possible moves for black in a priority queue such that </span>
-</span></span><span class="line"><span class="cl">    <span class="c1"># the top element is the one with the largest evaluation score</span>
+</span></span><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">PlayerAI</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="k">def</span> <span class="nf">evaluate_state</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">board</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="c1"># Implement the heuristic evaluation function to assess the desirability of each board state.</span>
+</span></span><span class="line"><span class="cl">        <span class="c1"># The evaluation function should consider factors like piece score, position score, offensive score, and defensive score.</span>
+</span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">    <span class="k">def</span> <span class="nf">possible_moves</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">board</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="c1"># Generate all possible moves for the black player in a priority queue where the top element has the largest evaluation score.</span>
 </span></span><span class="line"><span class="cl">        <span class="n">moves</span> <span class="o">=</span> <span class="n">PriorityQueue</span><span class="p">()</span>
 </span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="n">moves</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">    <span class="c1"># represent a board as a string for smaller storage and faste comparison</span>
 </span></span><span class="line"><span class="cl">    <span class="k">def</span> <span class="nf">stringify_board</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">board</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="c1"># Represent a board as a string for efficient storage and faster comparison.</span>
 </span></span><span class="line"><span class="cl">        <span class="n">res</span> <span class="o">=</span> <span class="s2">&#34;&#34;</span>
 </span></span><span class="line"><span class="cl">        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">6</span><span class="p">):</span>
 </span></span><span class="line"><span class="cl">            <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">6</span><span class="p">):</span>
@@ -261,7 +347,7 @@
 </span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="n">res</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">    <span class="k">def</span> <span class="nf">make_move</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">board</span><span class="p">):</span>
-</span></span><span class="line"><span class="cl">        <span class="c1"># minimax searching function that returns the best move found in a given number of steps</span>
+</span></span><span class="line"><span class="cl">        <span class="c1"># Minimax searching function that returns the best move found within a given number of steps.</span>
 </span></span><span class="line"><span class="cl">        <span class="n">start_time</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
 </span></span><span class="line"><span class="cl">        <span class="n">end_time</span> <span class="o">=</span> <span class="n">start_time</span> <span class="o">+</span> <span class="mf">2.90</span>
 </span></span><span class="line"><span class="cl">
@@ -281,10 +367,10 @@
 </span></span><span class="line"><span class="cl">                <span class="n">current_move</span> <span class="o">=</span> <span class="n">moves</span><span class="o">.</span><span class="n">get</span><span class="p">()[</span><span class="mi">1</span><span class="p">]</span>
 </span></span><span class="line"><span class="cl">                <span class="k">if</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span> <span class="o">&gt;</span> <span class="n">end_time</span><span class="p">:</span>
 </span></span><span class="line"><span class="cl">                    <span class="k">break</span>
-</span></span><span class="line"><span class="cl">                <span class="c1"># use memoization to keep track of the board being evaluated</span>
+</span></span><span class="line"><span class="cl">                <span class="c1"># Use memoization to keep track of the boards being evaluated.</span>
+</span></span><span class="line"><span class="cl">                <span class="n">new_repr</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">stringify_board</span><span class="p">(</span><span class="n">board</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">                <span class="k">if</span> <span class="n">new_repr</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">visited</span><span class="p">:</span>
-</span></span><span class="line"><span class="cl">                    <span class="n">current_score</span> <span class="o">=</span> <span class="o">-</span><span class="n">minimax</span><span class="p">(</span><span class="n">invert_board</span><span class="p">,</span> <span class="n">depth</span> <span class="o">-</span> <span class="mi">1</span><span class="p">,</span> 
-</span></span><span class="line"><span class="cl">		    			<span class="ow">not</span><span class="p">(</span><span class="n">is_black</span><span class="p">),</span> <span class="n">alpha</span><span class="p">,</span> <span class="n">beta</span><span class="p">,</span> <span class="n">visited</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">                    <span class="n">current_score</span> <span class="o">=</span> <span class="o">-</span><span class="n">minimax</span><span class="p">(</span><span class="n">invert_board</span><span class="p">,</span> <span class="n">depth</span> <span class="o">-</span> <span class="mi">1</span><span class="p">,</span> <span class="ow">not</span> <span class="n">is_black</span><span class="p">,</span> <span class="n">alpha</span><span class="p">,</span> <span class="n">beta</span><span class="p">,</span> <span class="n">visited</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">                <span class="k">if</span> <span class="n">current_score</span> <span class="o">&gt;</span> <span class="n">best_score</span><span class="p">:</span>
 </span></span><span class="line"><span class="cl">                    <span class="n">best_score</span> <span class="o">=</span> <span class="n">current_score</span>
@@ -300,7 +386,7 @@
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">            <span class="k">return</span> <span class="n">best_score</span><span class="p">,</span> <span class="n">best_move</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">        <span class="c1"># implement iterative deepening minimax search</span>
+</span></span><span class="line"><span class="cl">        <span class="c1"># Implement iterative deepening minimax search.</span>
 </span></span><span class="line"><span class="cl">        <span class="k">while</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span> <span class="o">&lt;</span> <span class="n">end_time</span><span class="p">:</span>
 </span></span><span class="line"><span class="cl">            <span class="n">current_search</span> <span class="o">=</span> <span class="n">minimax</span><span class="p">(</span><span class="n">board</span><span class="p">,</span> <span class="n">depth</span><span class="p">,</span> <span class="kc">True</span><span class="p">,</span> <span class="o">-</span><span class="n">math</span><span class="o">.</span><span class="n">inf</span><span class="p">,</span> <span class="n">math</span><span class="o">.</span><span class="n">inf</span><span class="p">,</span> <span class="p">{})</span>
 </span></span><span class="line"><span class="cl">            <span class="k">if</span> <span class="n">current_search</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">current_best_score</span><span class="p">:</span>
@@ -312,35 +398,44 @@
 </span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="n">current_best_move</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h3 id="the-general-approah-i-took">The General Approah I took</h3>
-<p>The overall algorithm is based on the minimax search algorithm with alpha-beta pruning. We will use a heuristic function, which shall be discussed in the latter section, to evaluate the desirability of each state of the board from the point of view of the black player. (i.e, the larger the score of a particular board, the more desirable the board is for the black player.) When it is the White player&rsquo;s turn to move, we invert the board to find the most desirable move for the White player and return the most negative score of that board since the score of the board is from the perspective of the black player. The algorithm also incorporates alpha-beta pruning where alpha only updates for the black player and beta is only updated for the white player to reduce the number of boards expand, thus increasing the level searched</p>
-<h3 id="some-constraints-given-by-the-questions">Some Constraints Given by the questions</h3>
-<p>Since the question states a time constraint of making each move within actual 3 seconds, regardless of the machine where the algorithm runs. It is therefore suitable to enhance the algorithm with iterative deepening, where the depth of the minimax search increases gradually within the given time. To achieve this, we first find the time before the algorithm&rsquo;s execution and calculate the end time to be incremented by 2.90. Second, when entering each iteration, namely when evaluating each possible next step, we compare the current time with the supposed end time. If it exceeds 2.90 seconds, we return the best move we have found so far. The 0.1 second left allows the algorithm to finish executing the remaining instructions. The 2.90 seconds limit works fine both on my laptop and desktop.</p>
-<h3 id="some-additional-features-that-i-included-to-further-improve-the-performance">Some Additional Features that I Included to Further Improve the performance</h3>
+</div><p>Certainly! Here&rsquo;s the enhanced version with emojis for each point:</p>
+<h4 id="enhancements-left-unexplored-">Enhancements Left Unexplored 🚧</h4>
+<p>While the current implementation already demonstrates formidable performance, there are still some enhancements I did not have the time to explore fully:</p>
+<p>Absolutely! Let&rsquo;s delve deeper into each unexplored enhancement:</p>
 <ul>
-<li>to increase the pruning for the alpha-beta algorithm, moving ordering is also adopted. The possible moves of a certain board are stored in a priority queue sorted according to each board’s score in descending order. This means that the most promising move will be evaluated first, and pruning is more likely to happen.</li>
-<li>Memoization is used in the evaluate_board function to further speed up the algorithm by storing the score of each board as a dictionary in the class PlayerAI(). This avoids calling the evaluate_board function repeatedly on the same board at the base cases. Such an approach is viable as the number of the possible state of the 8x8 breakthrough game is still relatively small and we are evaluating the board in various places (when generating possible moves, and when evaluating the base case). I also create a stringify_state function to produce a string representation of a board since the original list representation of the board is not hashable.</li>
+<li>
+<p><strong>Zobrist Hashing 🧩:</strong> Zobrist hashing is a clever technique used in board game AI to efficiently represent and compare board states. It involves assigning a random number (a hash value) to each possible piece and position on the board. By XORing these hash values together, we can create a unique hash for each board state. Zobrist hashing allows us to quickly compare and identify previously visited board states, reducing redundant evaluations and improving search efficiency. Implementing this technique could have further optimized the algorithm&rsquo;s performance, particularly in scenarios with a high number of board states.</p>
+</li>
+<li>
+<p><strong>Transposition Tables 🔢:</strong> Transposition tables are a valuable addition to any advanced board game AI. They store previously computed board evaluations, along with their associated depth and best move information. When encountering a previously visited board state during the search, the AI can retrieve the stored evaluation and use it to update the current evaluation score. This saves time by avoiding redundant evaluations and allows the AI agent to explore deeper levels in the game tree.</p>
+</li>
+<li>
+<p><strong>Opening Book 📚:</strong> Creating an opening book involves precomputing and storing a collection of well-known and well-analyzed opening moves. During the early stages of the game, the AI agent can refer to this book to make moves without extensive search, as these moves have been strategically analyzed beforehand. Utilizing an opening book can significantly speed up the early moves, providing the AI with a solid foundation for the rest of the game.</p>
+</li>
+<li>
+<p><strong>Advanced Heuristic Features 🏛️:</strong> While the current heuristic evaluation function is comprehensive and effective, there are numerous other strategic elements to explore. Incorporating additional features, such as considering pawn mobility (the number of possible moves for each pawn), central control (occupying the center of the board), or pawn promotion incentives (encouraging pawns to advance towards the opponent&rsquo;s home row), could lead to more nuanced and sophisticated gameplay. Fine-tuning the weightage of these features would be an exciting area to investigate.</p>
+</li>
+<li>
+<p><strong>Monte Carlo Tree Search (MCTS) 🌳🎲:</strong> MCTS is a powerful algorithm for games with large branching factors. Combining MCTS with the current minimax search could provide a balanced approach to exploration and exploitation. MCTS involves performing random simulations from the current board state to gather statistics on moves&rsquo; success rates. This information can guide the AI&rsquo;s decision-making process, allowing it to make more informed choices when exploring the game tree.</p>
+</li>
+<li>
+<p><strong>Parallelization 🔄:</strong> Parallelizing the search process using multi-threading or distributed computing can dramatically speed up the AI agent&rsquo;s search speed. By dividing the search among multiple threads or machines, the AI can explore different parts of the game tree simultaneously, significantly increasing the number of nodes evaluated within the time constraints.</p>
+</li>
+<li>
+<p><strong>Machine Learning Techniques 🧠📊:</strong> Exploring machine learning techniques, such as deep reinforcement learning or neural networks, can open up new possibilities for the AI agent&rsquo;s decision-making process. By learning from large datasets of gameplay data, the AI could adapt and improve its strategy over time, becoming a more formidable opponent.</p>
+</li>
+<li>
+<p><strong>Dynamic Evaluation Function 📈:</strong> Rather than using a fixed evaluation function, a dynamic evaluation function could adjust its weightage or features based on the game state. For example, the function could prioritize certain features in the opening stage, and then shift its focus to different features in the middle or endgame. This adaptability could lead to more flexible and responsive gameplay.</p>
+</li>
+<li>
+<p><strong>Optimized Data Structures 💾:</strong> Optimizing the data structures used in the algorithm, such as using bitboards instead of 2D arrays to represent the board state, could further improve memory efficiency and computational speed. Bitboards are a compact and efficient representation that allows bitwise operations, reducing memory overhead and speeding up evaluations.</p>
+</li>
 </ul>
-<h3 id="the-heuristic-function">The Heuristic Function!!!</h3>
-<p>the heuristic of my evaluation_board function takes several factors into consideration. The most obvious case is that for the winning state, the score should be a large positive number if the black player wins the game and a large negative number otherwise. Also, if the white pawns are in the second last row, meaning that we are almost losing, such a state should be penalized significantly.
-There four following basic factors are considered:</p>
-<ul>
-<li>The piece score in the evaluation function stores the amount by which the number of black pawns exceeds the number of white pawns.</li>
-<li>The position score in the evaluation function stores the amount by which the sum of distances of each black pawn from its baseline exceeds that of white pawns.</li>
-<li>The offensive score in the evaluation function stores the farthest distance from the one black pawn to the baseline.</li>
-<li>The defensive score in the evaluation function stores the closest distance from the one white pawn to the black pawn&rsquo;s baseline.</li>
-</ul>
-<p>The larger the more desirable for all four factors. However, unfortunately, the weightage of each factor is determined empirically. I have created several test players which only consider one of the aforementioned factors to play against each other. After much testing, I decided to assign more weightage to the defensive score as the defensive player performs the best among all the test players while assigning a much low weight for the offensive score as it renders the player more prone to move forward recklessly. A comprehensive player is also designed to consider all four above basic stats for further testing. The source code for all five players is attached below in the document.
-Moreover, after actually playing the game myself, I have discovered various non-obvious features of the board that we may what to ponder in our evaluation function:</p>
-<ul>
-<li>The danger penalty in the evaluation function stores the number of white pawns that can attack our black pawns. (i.e., which can be captured by white pawns in the next turn).</li>
-<li>In addition, the protected bonus calculates whether an endangered black pawn is being protected by other black pawns, meaning that if the white pawns actually attack our black pawn, the protecting black pawn can attack the white pawn in revenge.
-The weight for the protected bonus is designed to the higher than the danger penalty. Therefore, if the pawn is endangered without being protected, we will penalize it heavily as we will lose the pawn without being able to revenge. On the other hand, if the pawn is actually endangered but protected at the same time, we will rather reward the state. With such a strategy, we can lure the opponent to eat our pawn such that we can immediately counterattack. This is especially effective when playing against players that prioritize attacking.</li>
-<li>The other feature that came to my attention is when there are empty columns. I found that if we have columns without black pawns, it becomes more difficult to defend in terms of blocking the opponent on the column and attacking the opponent on the neighbouring column. Therefore, I have created this empty column penalty, to penalize boards with empty columns. Furthermore, a more precarious situation is when there is a column with a white pawn but not a black pawn. We will double penalize that case.</li>
-</ul>
-<h3 id="the-testing">The Testing</h3>
-<p>After the implementation of the aforemented algorithm, which is able to search for around 5 levels on my machine within 3 seconds. I have also created a few other more naive players that only searches for 3 levels to test out my agent.
-Here are the heuristic functions I used to the naive player.</p>
+<p>While these enhancements were not fully explored within the project&rsquo;s constraints, they represent promising avenues for future development. The current implementation already showcases the power of the iterative deepening minimax search algorithm with alpha-beta pruning and a thoughtfully crafted heuristic evaluation function. With these enhancements left unexplored, there is ample room for continued innovation and advancement in the realm of Breakthrough AI. 🚧🚀</p>
+<h3 id="the-testing-unraveling-the-capabilities-">The Testing: Unraveling the Capabilities 🧪🎮</h3>
+<p>Following the implementation of the iterative deepening minimax search algorithm with alpha-beta pruning, capable of searching up to approximately 5 levels within the 3-second time constraint, I devised a series of test scenarios to evaluate my AI agent&rsquo;s prowess.</p>
+<h3 id="the-naive-players-">The Naive Players 👶</h3>
+<p>To assess my AI agent&rsquo;s performance against less sophisticated opponents, I created a few more naive players with only 3 levels of search depth. Here are the heuristic functions for these naive players:</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -389,33 +484,69 @@ Here are the heuristic functions I used to the naive player.</p>
 </span><span class="lnt">44
 </span><span class="lnt">45
 </span><span class="lnt">46
+</span><span class="lnt">47
+</span><span class="lnt">48
+</span><span class="lnt">49
+</span><span class="lnt">50
+</span><span class="lnt">51
+</span><span class="lnt">52
+</span><span class="lnt">53
+</span><span class="lnt">54
+</span><span class="lnt">55
+</span><span class="lnt">56
+</span><span class="lnt">57
+</span><span class="lnt">58
+</span><span class="lnt">59
+</span><span class="lnt">60
+</span><span class="lnt">61
+</span><span class="lnt">62
+</span><span class="lnt">63
+</span><span class="lnt">64
+</span><span class="lnt">65
+</span><span class="lnt">66
+</span><span class="lnt">67
+</span><span class="lnt">68
+</span><span class="lnt">69
+</span><span class="lnt">70
+</span><span class="lnt">71
+</span><span class="lnt">72
+</span><span class="lnt">73
+</span><span class="lnt">74
+</span><span class="lnt">75
+</span><span class="lnt">76
+</span><span class="lnt">77
+</span><span class="lnt">78
+</span><span class="lnt">79
+</span><span class="lnt">80
+</span><span class="lnt">81
+</span><span class="lnt">82
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># compare the number of pieces</span>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># Compare the number of pieces</span>
 </span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">piece_evaluation</span><span class="p">(</span><span class="n">board</span><span class="p">):</span>
-</span></span><span class="line"><span class="cl">        <span class="n">number_of_pieces</span> <span class="o">=</span> <span class="mi">0</span>
-</span></span><span class="line"><span class="cl">        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">6</span><span class="p">):</span>
-</span></span><span class="line"><span class="cl">            <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">6</span><span class="p">):</span>
-</span></span><span class="line"><span class="cl">                <span class="k">if</span><span class="p">(</span><span class="n">board</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;B&#39;</span><span class="p">):</span>
-</span></span><span class="line"><span class="cl">                    <span class="n">number_of_pieces</span> <span class="o">+=</span> <span class="mi">1</span>
-</span></span><span class="line"><span class="cl">                <span class="k">if</span><span class="p">(</span><span class="n">board</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;W&#39;</span><span class="p">):</span>
-</span></span><span class="line"><span class="cl">                    <span class="n">number_of_pieces</span> <span class="o">-=</span> <span class="mi">1</span>
-</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="n">number_of_pieces</span>
-</span></span><span class="line"><span class="cl">    
-</span></span><span class="line"><span class="cl"><span class="c1"># compare the number of possible moves</span>
+</span></span><span class="line"><span class="cl">    <span class="n">number_of_pieces</span> <span class="o">=</span> <span class="mi">0</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">6</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">6</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">            <span class="k">if</span> <span class="n">board</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;B&#39;</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">                <span class="n">number_of_pieces</span> <span class="o">+=</span> <span class="mi">1</span>
+</span></span><span class="line"><span class="cl">            <span class="k">if</span> <span class="n">board</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;W&#39;</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">                <span class="n">number_of_pieces</span> <span class="o">-=</span> <span class="mi">1</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">number_of_pieces</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Compare the number of possible moves</span>
 </span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">mobility_evaluation</span><span class="p">(</span><span class="n">board</span><span class="p">):</span>
 </span></span><span class="line"><span class="cl">    <span class="n">invert_state</span> <span class="o">=</span> <span class="n">copy</span><span class="o">.</span><span class="n">deepcopy</span><span class="p">(</span><span class="n">board</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">    <span class="n">utils</span><span class="o">.</span><span class="n">invert_board</span><span class="p">(</span><span class="n">invert_state</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="nb">len</span><span class="p">(</span><span class="n">possible_moves</span><span class="p">(</span><span class="n">board</span><span class="p">))</span> <span class="o">-</span> <span class="nb">len</span><span class="p">(</span><span class="n">possible_moves</span><span class="p">(</span><span class="n">invert_state</span><span class="p">))</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1"># compare the total number of distance from the base line</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># Compare the total number of distances from the baseline</span>
 </span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">greedy_evaluation</span><span class="p">(</span><span class="n">board</span><span class="p">):</span>
 </span></span><span class="line"><span class="cl">    <span class="n">total_position_score</span> <span class="o">=</span> <span class="mi">0</span>
 </span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">6</span><span class="p">):</span>
 </span></span><span class="line"><span class="cl">        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">6</span><span class="p">):</span>
-</span></span><span class="line"><span class="cl">            <span class="k">if</span><span class="p">(</span><span class="n">board</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;B&#39;</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">            <span class="k">if</span> <span class="n">board</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;B&#39;</span><span class="p">:</span>
 </span></span><span class="line"><span class="cl">                <span class="n">total_position_score</span> <span class="o">+=</span> <span class="n">i</span>
-</span></span><span class="line"><span class="cl">            <span class="k">elif</span><span class="p">(</span><span class="n">board</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;W&#39;</span> <span class="ow">and</span> <span class="n">i</span> <span class="p">):</span>
+</span></span><span class="line"><span class="cl">            <span class="k">elif</span> <span class="n">board</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;W&#39;</span><span class="p">:</span>
 </span></span><span class="line"><span class="cl">                <span class="n">total_position_score</span> <span class="o">-=</span> <span class="p">(</span><span class="mi">5</span> <span class="o">-</span> <span class="n">i</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">total_position_score</span>
@@ -426,7 +557,7 @@ Here are the heuristic functions I used to the naive player.</p>
 </span></span><span class="line"><span class="cl">        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">6</span><span class="p">):</span>
 </span></span><span class="line"><span class="cl">            <span class="k">if</span> <span class="n">board</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&#34;B&#34;</span><span class="p">:</span>
 </span></span><span class="line"><span class="cl">                <span class="n">score</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="n">score</span><span class="p">,</span> <span class="n">i</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">score</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">defensive_evaluation</span><span class="p">(</span><span class="n">board</span><span class="p">):</span>
@@ -435,28 +566,67 @@ Here are the heuristic functions I used to the naive player.</p>
 </span></span><span class="line"><span class="cl">        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">6</span><span class="p">):</span>
 </span></span><span class="line"><span class="cl">            <span class="k">if</span> <span class="n">board</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&#34;W&#34;</span><span class="p">:</span>
 </span></span><span class="line"><span class="cl">                <span class="n">score</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span><span class="n">score</span><span class="p">,</span> <span class="n">i</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">score</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Heuristic Function: Random Evaluation</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># This player makes random moves without any strategic evaluation.</span>
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">random_evaluation</span><span class="p">(</span><span class="n">board</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="o">-</span><span class="mi">10</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Heuristic Function: Mobility Evaluation</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># This player prioritizes maximizing its own mobility, irrespective of the opponent&#39;s moves.</span>
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">mobility_evaluation_v2</span><span class="p">(</span><span class="n">board</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="nb">len</span><span class="p">(</span><span class="n">possible_moves</span><span class="p">(</span><span class="n">board</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Heuristic Function: Defensive Recklessness</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># This player aggressively moves forward but also considers its distance from the opponent&#39;s baseline.</span>
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">defensive_recklessness_evaluation</span><span class="p">(</span><span class="n">board</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="n">score</span> <span class="o">=</span> <span class="mi">0</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">6</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">6</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">            <span class="k">if</span> <span class="n">board</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&#34;B&#34;</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">                <span class="n">score</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="n">score</span><span class="p">,</span> <span class="n">i</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="k">elif</span> <span class="n">board</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&#34;W&#34;</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">                <span class="n">score</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="n">score</span><span class="p">,</span> <span class="mi">5</span> <span class="o">-</span> <span class="n">i</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">score</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Heuristic Function: Proximity to Victory</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># This player evaluates positions based on their proximity to winning conditions.</span>
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">proximity_to_victory_evaluation</span><span class="p">(</span><span class="n">board</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="n">winning_score</span> <span class="o">=</span> <span class="mi">100</span>
+</span></span><span class="line"><span class="cl">    <span class="n">losing_score</span> <span class="o">=</span> <span class="o">-</span><span class="mi">100</span>
+</span></span><span class="line"><span class="cl">    <span class="n">black_win</span><span class="p">,</span> <span class="n">white_win</span> <span class="o">=</span> <span class="n">check_victory</span><span class="p">(</span><span class="n">board</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="n">black_win</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="n">winning_score</span>
+</span></span><span class="line"><span class="cl">    <span class="k">elif</span> <span class="n">white_win</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="n">losing_score</span>
+</span></span><span class="line"><span class="cl">    <span class="k">else</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="mi">0</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p>My AI agent is able to defeat all of them around 20 steps, it really surprised me that minimax search can be so powerful if we are able to search for several more layers</p>
-<h3 id="some-features-that-i-didnt-have-time-to-implement">Some Features that I Didn&rsquo;t have Time to Implement</h3>
-<ul>
-<li>Zobrist Hashing</li>
-</ul>
-<h3 id="referenece">Referenece</h3>
-<p><a href="https://www.codeproject.com/Articles/37024/Simple-AI-for-the-Game-of-Breakthrough" target="_blank" rel="noopener noreffer ">https://www.codeproject.com/Articles/37024/Simple-AI-for-the-Game-of-Breakthrough</a>.
-I have gained much high-level inspiration from this article, especially for my evaluation function but I have implemented all the algorithms on my own. 😉</p></div><div class="post-footer" id="post-footer">
+</div><p>By incorporating these additional naive players, my AI agent will now compete against various strategies with different evaluation criteria. This comprehensive testing will help me gain a deeper understanding of its performance and areas for potential improvement. Let the gaming begin! 🚀🎮</p>
+<h4 id="astounding-results-">Astounding Results 🌟</h4>
+<p>My AI agent demonstrated its mettle by defeating all naive players within approximately 20 steps! The effectiveness and power of minimax search, coupled with an insightful heuristic function, exceeded my expectations. The ability to search several more layers in such a short time showcased the true potential of the iterative deepening minimax algorithm.</p>
+<h3 id="conclusion-and-reference-">Conclusion and Reference 🏁📚</h3>
+<p>While I have accomplished remarkable progress in building an AI agent for Breakthrough, there are still avenues for further exploration, such as implementing Zobrist hashing to optimize the algorithm&rsquo;s efficiency.</p>
+<p>The development of the heuristic function drew inspiration from a valuable</p>
+<p>resource: <a href="https://www.codeproject.com/Articles/37024/Simple-AI-for-the-Game-of-Breakthrough" target="_blank" rel="noopener noreffer ">https://www.codeproject.com/Articles/37024/Simple-AI-for-the-Game-of-Breakthrough</a>. While high-level insights were gleaned from this article, all algorithms and implementations were crafted independently.</p>
+<p>Join me in my journey of AI exploration as I delve deeper into the world of algorithms, optimization techniques, and the exciting realm of heuristic evaluation! 🚀🤖</p>
+<p>Stay tuned for more AI adventures! 🌟🎲</p>
+<p>If you have any suggestions, questions, or insights to share, feel free to reach out and embark on this fascinating AI journey together! 🤝😊</p>
+<hr></div><div class="post-footer" id="post-footer">
     <div class="post-info">
         <div class="post-info-line">
             <div class="post-info-mod">
-                <span>Updated on 2022-12-23&nbsp;<a class="git-hash" href="https://github.com/dillonzq/LoveIt/commit/d3db25ca19d259424e8b5338194f6526966508f2" target="_blank" title="commit by Yufannnn(e0773591@u.nus.edu) d3db25ca19d259424e8b5338194f6526966508f2: init commit">
-                                    <i class="fas fa-hashtag fa-fw" aria-hidden="true"></i>d3db25c</a></span>
+                <span>Updated on 2022-12-24&nbsp;<a class="git-hash" href="https://github.com/dillonzq/LoveIt/commit/025873688ed0818cf93e212fe2a9a84851d457da" target="_blank" title="commit by Yufannnn(e0773591@u.nus.edu) 025873688ed0818cf93e212fe2a9a84851d457da: Huge Update">
+                                    <i class="fas fa-hashtag fa-fw" aria-hidden="true"></i>0258736</a></span>
             </div></div>
         <div class="post-info-line">
             <div class="post-info-md"></div>
             <div class="post-info-share">
-                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="http://yufannnn.github.io/posts/minimax/minimax/" data-title="The power of Iterative Deepening Minimax search with Alpha Beta Pruning :boom:" data-via="ZYF_777" data-hashtags="computer science,algorithm,AI"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="http://yufannnn.github.io/posts/minimax/minimax/" data-hashtag="computer science"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on WhatsApp" data-sharer="whatsapp" data-url="http://yufannnn.github.io/posts/minimax/minimax/" data-title="The power of Iterative Deepening Minimax search with Alpha Beta Pruning :boom:" data-web><i class="fab fa-whatsapp fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Hacker News" data-sharer="hackernews" data-url="http://yufannnn.github.io/posts/minimax/minimax/" data-title="The power of Iterative Deepening Minimax search with Alpha Beta Pruning :boom:"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="http://yufannnn.github.io/posts/minimax/minimax/" data-title="The power of Iterative Deepening Minimax search with Alpha Beta Pruning :boom:"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@7.3.0/icons/line.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="http://yufannnn.github.io/posts/minimax/minimax/" data-title="The power of Iterative Deepening Minimax search with Alpha Beta Pruning :boom:" data-image="Minimax.png"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on 百度" data-sharer="baidu" data-url="http://yufannnn.github.io/posts/minimax/minimax/" data-title="The power of Iterative Deepening Minimax search with Alpha Beta Pruning :boom:"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@7.3.0/icons/baidu.svg" aria-hidden="true"></i></a></span>
+                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="http://yufannnn.github.io/posts/minimax/minimax/" data-title="The Power of Iterative Deepening Minimax Search with Alpha-Beta Pruning 💥" data-via="ZYF_777" data-hashtags="computer science,algorithm,AI"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="http://yufannnn.github.io/posts/minimax/minimax/" data-hashtag="computer science"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on WhatsApp" data-sharer="whatsapp" data-url="http://yufannnn.github.io/posts/minimax/minimax/" data-title="The Power of Iterative Deepening Minimax Search with Alpha-Beta Pruning 💥" data-web><i class="fab fa-whatsapp fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Hacker News" data-sharer="hackernews" data-url="http://yufannnn.github.io/posts/minimax/minimax/" data-title="The Power of Iterative Deepening Minimax Search with Alpha-Beta Pruning 💥"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="http://yufannnn.github.io/posts/minimax/minimax/" data-title="The Power of Iterative Deepening Minimax Search with Alpha-Beta Pruning 💥"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@7.3.0/icons/line.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="http://yufannnn.github.io/posts/minimax/minimax/" data-title="The Power of Iterative Deepening Minimax Search with Alpha-Beta Pruning 💥" data-image="Minimax.png"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on 百度" data-sharer="baidu" data-url="http://yufannnn.github.io/posts/minimax/minimax/" data-title="The Power of Iterative Deepening Minimax Search with Alpha-Beta Pruning 💥"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@7.3.0/icons/baidu.svg" aria-hidden="true"></i></a></span>
             </div>
         </div>
     </div>
@@ -468,15 +638,15 @@ I have gained much high-level inspiration from this article, especially for my e
         </section>
     </div>
 
-    <div class="post-nav"><a href="/posts/benching90/benching90/" class="prev" rel="prev" title="First Time Benching 90KG for 6 reps :muscle:"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>First Time Benching 90KG for 6 reps 💪</a>
-            <a href="/posts/detour/detour/" class="next" rel="next" title="Detours I Have Taken When Trying to Build Muscle :worried:">Detours I Have Taken When Trying to Build Muscle 😟<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+    <div class="post-nav"><a href="/posts/benching90/benching90/" class="prev" rel="prev" title="First Time Benching 90KG for 6 Reps! 💪"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>First Time Benching 90KG for 6 Reps! 💪</a>
+            <a href="/posts/detour/detour/" class="next" rel="next" title="Detours I Have Taken When Trying to Build Muscle 😔">Detours I Have Taken When Trying to Build Muscle 😔<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
 </div>
 <div id="comments"><div id="disqus_thread" class="comment"></div><noscript>
                 Please enable JavaScript to view the comments powered by <a href="https://disqus.com/?ref_noscript">Disqus</a>.
             </noscript></div></article></div>
             </main><footer class="footer">
-        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.109.0">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
-                </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2022</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">Zhu Yufan</a></span></div>
+        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.108.0">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
+                </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2022 - 2023</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">Zhu Yufan</a></span></div>
         </div>
     </footer></div>
 
@@ -485,5 +655,5 @@ I have gained much high-level inspiration from this article, especially for my e
             </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
                 <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
             </a>
-        </div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/css/lightgallery-bundle.min.css"><script type="text/javascript" src="https://.disqus.com/embed.js" defer></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/autocomplete.js@0.38.1/dist/autocomplete.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lunr@2.3.9/lunr.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/lightgallery.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/plugins/thumbnail/lg-thumbnail.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/plugins/zoom/lg-zoom.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.5.1/sharer.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/typeit@8.6.0/dist/index.umd.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":20},"comment":{},"data":{"id-1":"Yufan's Blog","id-2":"Yufan's Blog"},"lightgallery":true,"search":{"highlightTag":"em","lunrIndexURL":"/index.json","maxResultLength":10,"noResultsFound":"No results found","snippetLength":30,"type":"lunr"},"typeit":{"cursorChar":"|","cursorSpeed":1000,"data":{"id-1":["id-1"],"id-2":["id-2"]},"duration":-1,"speed":100}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+        </div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/css/lightgallery-bundle.min.css"><script type="text/javascript" src="https://.disqus.com/embed.js" defer></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/autocomplete.js@0.38.1/dist/autocomplete.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lunr@2.3.9/lunr.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/lightgallery.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/plugins/thumbnail/lg-thumbnail.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/plugins/zoom/lg-zoom.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.5.1/sharer.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/typeit@8.6.0/dist/index.umd.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":50},"comment":{},"data":{"id-1":"Yufan's Blog","id-2":"Yufan's Blog"},"lightgallery":true,"search":{"highlightTag":"em","lunrIndexURL":"/index.json","maxResultLength":10,"noResultsFound":"No results found","snippetLength":30,"type":"lunr"},"typeit":{"cursorChar":"|","cursorSpeed":1000,"data":{"id-1":["id-1"],"id-2":["id-2"]},"duration":-1,"speed":100}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
 </html>

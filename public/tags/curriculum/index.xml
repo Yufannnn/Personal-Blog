@@ -12,7 +12,8 @@
     <guid>http://yufannnn.github.io/posts/zobrist/zobrist/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/Zobrist.jpg" referrerpolicy="no-referrer">
-            </div><p>This post is kind of a following up to the previous post. I found a surprising question where Zobrist hashing is applicable. Alert: this post is going to be a bit technical!</p>]]></description>
+            </div>I&rsquo;m excited to share a surprising discovery I made while working on a programming assignment for the CS3230 module, Design and Analysis of Algorithms, at NUS. This revelation involves the unexpected application of Zobrist Hashing, a technique primarily designed for board games, to efficiently solve a challenging problem unrelated to gaming. Get ready for a bit of technical insight!
+Revisiting Zobrist Hashing 🕹️ In my previous post, I shared my experiences developing an AI agent to play the board game &ldquo;Breakthrough&rdquo; for the CS2109S individual project.]]></description>
 </item>
 <item>
     <title>Modules that I have taken for each semester in NUS :eyes:</title>

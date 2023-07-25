@@ -29,7 +29,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "http:\/\/yufannnn.github.io\/posts\/zobrist\/zobrist\/"
-        },"genre": "posts","keywords": "computer science, curriculum","wordcount":  1070 ,
+        },"genre": "posts","keywords": "computer science, curriculum","wordcount":  1198 ,
         "url": "http:\/\/yufannnn.github.io\/posts\/zobrist\/zobrist\/","datePublished": "2022-10-17T00:00:00+00:00","dateModified": "2022-12-23T22:38:56+08:00","license": "Zhu Yufan 2022","publisher": {
             "@type": "Organization",
             "name": "xxxx","logo": "http:\/\/yufannnn.github.io\/images\/avatar.png"},"author": {
@@ -103,7 +103,7 @@
             <div class="toc-content always-active" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Unexpected Use of Zobrist Hashing 👀</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Zhu Yufan</a></span>&nbsp;<span class="post-category">included in <a href="/categories/academia/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Academia</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2022-10-17">2022-10-17</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;1070 words&nbsp;
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2022-10-17">2022-10-17</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;1198 words&nbsp;
                 <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;6 minutes&nbsp;</div>
         </div><div class="featured-image"><img
         class="lazyload"
@@ -112,53 +112,91 @@
         data-srcset="/Zobrist.jpg, /Zobrist.jpg 1.5x, /Zobrist.jpg 2x"
         data-sizes="auto"
         alt="/Zobrist.jpg"
-        title="A surprising place to use Zobrist Hashing, which is designed for board games" width="573" height="480" /></div><div class="details toc" id="toc-static"  data-kept="">
+        title="A surprising place to use Zobrist Hashing, which is designed for board games" width="399" height="286" /></div><div class="details toc" id="toc-static"  data-kept="">
                 <div class="details-summary toc-title">
                     <span>Contents</span>
                     <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
                 </div>
                 <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
   <ul>
-    <li>
+    <li><a href="#revisiting-zobrist-hashing-">Revisiting Zobrist Hashing 🕹️</a></li>
+    <li><a href="#the-unexpected-quest-">The Unexpected Quest 🚀</a>
       <ul>
-        <li><a href="#my-initial-stereotype-about-zobrist-hashing">My Initial stereotype about Zobrist Hashing</a></li>
-        <li><a href="#a-new-quest">A New Quest</a></li>
-        <li><a href="#the-solution-10">The Solution 1.0</a></li>
-        <li><a href="#the-problem">The Problem</a></li>
-        <li><a href="#the-solution-20">The Solution 2.0</a></li>
-        <li><a href="#the-implementation">The Implementation</a></li>
-        <li><a href="#the-improvement">The Improvement</a></li>
-        <li><a href="#to-be-continued-">To Be Continued &hellip;</a></li>
+        <li><a href="#the-problem-description-">The Problem Description 🎯</a></li>
+        <li><a href="#the-challenge-">The Challenge ⚡️</a></li>
       </ul>
     </li>
+    <li><a href="#solution-10---a-naive-attempt-">Solution 1.0 - A Naive Attempt 🤔</a>
+      <ul>
+        <li><a href="#the-space-complexity-concern-">The Space Complexity Concern 💥</a></li>
+      </ul>
+    </li>
+    <li><a href="#solution-20---the-surprising-application-of-zobrist-hashing-">Solution 2.0 - The Surprising Application of Zobrist Hashing 🤯</a>
+      <ul>
+        <li><a href="#the-modified-approach-">The Modified Approach 🛠️</a></li>
+        <li><a href="#the-xor-operation-">The XOR Operation 🔄</a></li>
+        <li><a href="#hashing-the-long-representation-">Hashing the Long Representation 🗝️</a></li>
+        <li><a href="#the-astounding-improvement-">The Astounding Improvement 🚀</a></li>
+      </ul>
+    </li>
+    <li><a href="#the-quest-continues-">The Quest Continues&hellip; 🗝️</a></li>
   </ul>
 </nav></div>
-            </div><div class="content" id="content"><p>This post is kind of a following up to the previous post. I found a surprising question where Zobrist hashing is applicable. Alert: this post is going to be a bit technical!</p>
-<p>This post is kind of a following up to the previous post. In the previous post, I wrote about the AI agent I constructed for the CS2109S individual project to play the board game, Breakthrough. There is, however, one feature I didn&rsquo;t manage to implement, Zobrist Hashing, which supposedly can dramatically reduce the runtime and space complexity. I have read about the Zobrist Hashing Algorithm but decided to not actually implement it due to lack of time. Instead, I just used a very naive approach: represent the board using a string and directly hash the string representation of the board, which runs in O(n^2) as we have to go through the n * n every time to figure out its string representation.</p>
-<div class="details admonition Note">
-        <div class="details-summary admonition-title">
-            <i class="icon fas fa-pencil-alt fa-fw" aria-hidden="true"></i>What is Zobrist Hashing?<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
-        </div>
-        <div class="details-content">
-            <div class="admonition-content">Zobrist hashing (also referred to as Zobrist keys or Zobrist signatures) is a hash function construction used in computer programs that play abstract board games, such as chess and Go, to implement transposition tables, a special kind of hash table that is indexed by a board position and used to avoid analyzing the same position more than once.</div>
-        </div>
-    </div>
-<h3 id="my-initial-stereotype-about-zobrist-hashing">My Initial stereotype about Zobrist Hashing</h3>
-<p>Upon reading Zobrist Hashing, I initially thought that this hashing algorithm is only dedicated to hashing for board games. I did not see how it could be used elsewhere as it seems to be so specifically designed for hashing board games.</p>
-<h3 id="a-new-quest">A New Quest</h3>
-<p>Several weeks later, the professor from another module that I concurrently took, CS3230 <em><strong>Design and Analysis of Algorithm</strong></em>, released a programming assignment. Here is the question of the assignment. Given an integer array of size n, find the number of balanced subarrays and output the number. An array is defined to be balanced if all the numbers in that array occur an even number of times (zero times included). For example, if the given array is [1, 1, 2, 3, 3, 2], the output should be 2 as we have subarray [1, 1] and [1, 1, 2, 3, 3, 2] being balanced. The algorithm should run in O(n^2) time complexity.</p>
-<h3 id="the-solution-10">The Solution 1.0</h3>
-<p>It didn&rsquo;t take me long to figure out a naive version of the solution. We can represent the whole configuration using a very long bit string, as long as the maximum number of the given array and set the bit string to be all zeros. Let the ith bit of the bit string represents the parity of number i in the array, 0 for even parity and 1 for odd parity. Every time we encounter a number, we just toggle the corresponding bit in the bit string to indicate a flip in parity. After changing the bit string for each number, we hash the current bit string and record the number for each bit representation. We can easily see that if we have two exactly the same bit strings, then the subarray in between them should be balanced. Therefore, after we loop through the whole array and get the number for each bit string, we simply have to find the summation of each count choose two. This is because by the argument before, we notice that for each pair of the same bit string the subarray between them is always balanced. Therefore, if we will find the total number of balanced subarrays, we need to calculate the number of distinct pairs for each bitstring and sum them up.</p>
-<h3 id="the-problem">The Problem</h3>
-<p>Seems to be pretty elegant, right? However, the problem is that the number in the given array can be extremely large, say 50,000. If we store the bitstring representation in the form of a series of long-type numbers, it means 391 long-type numbers are needed to store the representation! Since each long can represent 128 bits. Therefore, the space and time needed to hash all these values are going to be tremendous. Therefore, we need to figure out an even smarter solution.</p>
-<h3 id="the-solution-20">The Solution 2.0</h3>
-<p>As I only did the AI project one or two weeks ago, when sat down and reconsider the problem, I thought, &ldquo;Wait a minute, isn&rsquo;t this question a little bit similar to a board game&rdquo;. The essence of Zobrist Hashing is that in a board game, the board representation only changes minimally for every step, namely the move of a pawn. Therefore, we use the exclusive OR operation on the hash value of the previous step once to indicate the change to avoid repeated computation. The current problem shows much resemblance to the situation described above. When we loop through one element in the array, we only flip one bit of the bitstring, which is similar to the movement of a single pawn. Also, we don&rsquo;t care about the order or sequence of each bitstring representation; we only care about their counts. After I thought all these through, I then convinced myself that maybe Zobrist Hashing can actually be used in some other situations.</p>
-<h3 id="the-implementation">The Implementation</h3>
-<p>Instead of using a 391 longs combination as the representation. This time I long use a single long as the representation. We randomly initialize it first to avoid collision then find the largest element in the array and assign each number to a random long. The algorithm is rather straightforward, we simply loop through the array. When we encounter a number, we XOR it with our long representation and then hash the long representation, which is almost the same as the original version of Zobrist Hashing.</p>
-<h3 id="the-improvement">The Improvement</h3>
-<p>The improvement is unbelievable; the naive solution needs more than 20 seconds to solve an input of scale 50,000 while the Zobrist version only uses less than 3 seconds !!! I was wondering if I did not do the AI project several weeks ago, how would I even be able to link this problem with Zobrist hashing and come up with this elegant solution? It just struck me how amazing and flexible algorithms can be when it comes to problem-solving.</p>
-<h3 id="to-be-continued-">To Be Continued &hellip;</h3>
-<p>Lastly, after studying CS3230, I do wish to formally prove the runtime and the correctness of the algorithm but this post is already running a bit too long and too technical. Maybe, I will come back sometime and write a new post with the proof in the future!</p></div><div class="post-footer" id="post-footer">
+            </div><div class="content" id="content"><p>I&rsquo;m excited to share a surprising discovery I made while working on a programming assignment for the CS3230 module, <strong>Design and Analysis of Algorithms</strong>, at NUS. This revelation involves the unexpected application of Zobrist Hashing, a technique primarily designed for board games, to efficiently solve a challenging problem unrelated to gaming. Get ready for a bit of technical insight!</p>
+<h2 id="revisiting-zobrist-hashing-">Revisiting Zobrist Hashing 🕹️</h2>
+<p>In my previous post, I shared my experiences developing an AI agent to play the board game &ldquo;Breakthrough&rdquo; for the CS2109S individual project. Although I didn&rsquo;t implement Zobrist Hashing due to time constraints, I learned about its potential to significantly reduce runtime and space complexity in board game AI algorithms. For those unfamiliar, Zobrist Hashing is a hash function construction used to implement transposition tables in computer programs playing abstract board games like chess and Go. Its primary purpose is to avoid analyzing the same game position repeatedly.</p>
+<h2 id="the-unexpected-quest-">The Unexpected Quest 🚀</h2>
+<p>A few weeks after my AI project and exploration of Zobrist Hashing, I embarked on a fascinating programming assignment during my studies in CS3230. The assignment presented a challenging problem: to find the number of balanced subarrays in an integer array of size &ldquo;n.&rdquo;</p>
+<h3 id="the-problem-description-">The Problem Description 🎯</h3>
+<p>In this intriguing problem, we were given an array of integers, and our task was to identify the number of balanced subarrays it contained. An array is considered balanced if all its numbers occur an even number of times, including zero occurrences. Let&rsquo;s illustrate this with more examples:</p>
+<ul>
+<li>Example 1:
+<ul>
+<li>Array: <code>[1, 1, 2, 3, 3, 2]</code></li>
+<li>Balanced Subarrays: <code>[1, 1]</code>, <code>[1, 1, 2, 3, 3, 2]</code></li>
+<li>Explanation: In this array, both subarrays contain numbers with even occurrences, making them balanced.</li>
+</ul>
+</li>
+<li>Example 2:
+<ul>
+<li>Array: <code>[4, 4, 7, 8, 8, 7, 4, 8]</code></li>
+<li>Balanced Subarrays: <code>[4, 4]</code>, <code>[8, 8]</code>, <code>[4, 8]</code>, <code>[7, 8, 8, 7]</code></li>
+<li>Explanation: The subarrays in this array have even occurrences of their elements, satisfying the condition for balance.</li>
+</ul>
+</li>
+<li>Example 3:
+<ul>
+<li>Array: <code>[1, 2, 3, 4, 5]</code></li>
+<li>Balanced Subarrays: <code>[]</code> (Empty subarray)</li>
+<li>Explanation: In this case, there are no subarrays with elements occurring an even number of times, including zero occurrences. Hence, the empty subarray <code>[]</code> is the only balanced subarray.</li>
+</ul>
+</li>
+</ul>
+<h3 id="the-challenge-">The Challenge ⚡️</h3>
+<p>The complexity of the problem lies in achieving the solution with a runtime of O(n^2). Balancing subarrays effectively requires careful consideration of the array elements and their occurrences. With potentially large input arrays, the sheer number of subarrays possible demands a well-thought-out algorithmic approach. Additionally, ensuring that each subarray meets the condition of having elements occurring an even number of times, including zero occurrences, poses an intriguing challenge.</p>
+<p>To achieve the O(n^2) time complexity, we need to devise an algorithm that efficiently explores the array and identifies balanced subarrays without unnecessary computations. This requires smart data structures, techniques, or principles to keep the solution optimized and avoid redundant operations.</p>
+<p>In the next section, we&rsquo;ll explore how an unexpected application of Zobrist Hashing, which was originally designed for board games, remarkably addressed this challenge and provided an elegant solution to the problem.</p>
+<h2 id="solution-10---a-naive-attempt-">Solution 1.0 - A Naive Attempt 🤔</h2>
+<p>In my initial attempt at solving the problem, I devised a straightforward solution using a lengthy bit string representation. Each bit in the string denoted the parity of the corresponding number (0 for even parity and 1 for odd parity). As I looped through the array, I updated the bit string with each number&rsquo;s parity, hashed the resulting configuration, and recorded the counts for each bit representation. The number of distinct pairs of the same bit string indicated the total number of balanced subarrays.</p>
+<p>This approach, while conceptually simple, suffered from significant space complexity issues, especially when dealing with large input arrays. For example, when the size of the given array reached 50,000 elements, storing the entire configuration as a series of long-type numbers required nearly 391 long-type variables. Managing such a vast representation proved inefficient and impractical, leading to excessively high memory consumption.</p>
+<h3 id="the-space-complexity-concern-">The Space Complexity Concern 💥</h3>
+<p>The naive solution&rsquo;s space complexity can be better understood by considering that each long-type variable can represent 128 bits. With an array size of 50,000, each bit string representation required 391 long-type numbers, leading to the excessive memory usage mentioned earlier.</p>
+<p>As a result, the naive solution&rsquo;s performance degraded significantly as the array size increased, making it impractical for handling large datasets effectively.</p>
+<p>To address this space complexity concern and find a more efficient solution, I turned to explore alternative approaches and techniques, leading me to an unexpected application of Zobrist Hashing. The application of Zobrist Hashing remarkably improved the solution&rsquo;s efficiency and provided a more elegant way to tackle the problem of identifying balanced subarrays with a runtime of ( O(n^2) ). I will delve into this surprising quest and its exciting results in the next section. Stay tuned! 🚀👨‍💻</p>
+<h2 id="solution-20---the-surprising-application-of-zobrist-hashing-">Solution 2.0 - The Surprising Application of Zobrist Hashing 🤯</h2>
+<p>A moment of inspiration struck me! Zobrist Hashing, a technique typically used in board games, might hold the key to a more elegant and efficient solution for our problem of identifying balanced subarrays. By adapting the principles of Zobrist Hashing to this non-gaming scenario, I hoped to overcome the space complexity challenge and achieve the required ( O(n^2) ) runtime.</p>
+<h3 id="the-modified-approach-">The Modified Approach 🛠️</h3>
+<p>In the updated solution, I used a single long-type variable as the representation. The variable was randomly initialized to avoid collisions, and each number in the array was assigned to a random long. This initial step ensured that each element in the array was uniquely represented in the long-type variable.</p>
+<h3 id="the-xor-operation-">The XOR Operation 🔄</h3>
+<p>During the loop through the array, I employed the XOR operation to effectively mimic the XOR operations in Zobrist Hashing. For each number encountered, I XOR-ed its corresponding long representation with the current value of the long variable. This process efficiently updated the long representation to reflect the parity of numbers seen so far.</p>
+<h3 id="hashing-the-long-representation-">Hashing the Long Representation 🗝️</h3>
+<p>After updating the long representation, I proceeded to hash the long variable to obtain a unique hash value for each subarray configuration. The hash value acted as a fingerprint, enabling me to identify distinct subarrays with the same parity configuration efficiently.</p>
+<h3 id="the-astounding-improvement-">The Astounding Improvement 🚀</h3>
+<p>The shift to using Zobrist Hashing in this context yielded astonishing results! The Zobrist version of the solution solved the problem in under 3 seconds, a significant improvement over the naive solution&rsquo;s runtime of over 20 seconds for a large input array. This impressive enhancement showcases the power and adaptability of algorithmic techniques, even when applied in unexpected domains.</p>
+<h2 id="the-quest-continues-">The Quest Continues&hellip; 🗝️</h2>
+<p>The unexpected application of Zobrist Hashing to a problem unrelated to board games opened my eyes to the remarkable flexibility and versatility of algorithms. It&rsquo;s awe-inspiring to witness how concepts designed for specific purposes can be creatively adapted to address entirely different challenges.</p>
+<p>While I wish to delve into formal proofs of the algorithm&rsquo;s correctness and runtime, this post has already grown quite lengthy and technical. Perhaps in the future, I&rsquo;ll return with a new post to explore these aspects more thoroughly, providing a deeper understanding of the elegance and efficiency of the Zobrist Hashing-based solution.</p>
+</div><div class="post-footer" id="post-footer">
     <div class="post-info">
         <div class="post-info-line">
             <div class="post-info-mod">
@@ -180,15 +218,15 @@
         </section>
     </div>
 
-    <div class="post-nav"><a href="/posts/detour/detour/" class="prev" rel="prev" title="Detours I Have Taken When Trying to Build Muscle :worried:"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>Detours I Have Taken When Trying to Build Muscle 😟</a>
-            <a href="/posts/ta/ta/" class="next" rel="next" title="My Experience of being a Teaching Assistant in School of Computing :thinking:">My Experience of being a Teaching Assistant in School of Computing 🤔<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+    <div class="post-nav"><a href="/posts/detour/detour/" class="prev" rel="prev" title="Detours I Have Taken When Trying to Build Muscle 😔"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>Detours I Have Taken When Trying to Build Muscle 😔</a>
+            <a href="/posts/ta/ta/" class="next" rel="next" title="My Experience as a Teaching Assistant in the School of Computing">My Experience as a Teaching Assistant in the School of Computing<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
 </div>
 <div id="comments"><div id="disqus_thread" class="comment"></div><noscript>
                 Please enable JavaScript to view the comments powered by <a href="https://disqus.com/?ref_noscript">Disqus</a>.
             </noscript></div></article></div>
             </main><footer class="footer">
-        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.109.0">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
-                </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2022</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">Zhu Yufan</a></span></div>
+        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.108.0">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
+                </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2022 - 2023</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">Zhu Yufan</a></span></div>
         </div>
     </footer></div>
 
@@ -197,5 +235,5 @@
             </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
                 <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
             </a>
-        </div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/css/lightgallery-bundle.min.css"><script type="text/javascript" src="https://.disqus.com/embed.js" defer></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/autocomplete.js@0.38.1/dist/autocomplete.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lunr@2.3.9/lunr.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/lightgallery.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/plugins/thumbnail/lg-thumbnail.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/plugins/zoom/lg-zoom.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.5.1/sharer.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/typeit@8.6.0/dist/index.umd.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":20},"comment":{},"data":{"id-1":"Yufan's Blog","id-2":"Yufan's Blog"},"lightgallery":true,"search":{"highlightTag":"em","lunrIndexURL":"/index.json","maxResultLength":10,"noResultsFound":"No results found","snippetLength":30,"type":"lunr"},"typeit":{"cursorChar":"|","cursorSpeed":1000,"data":{"id-1":["id-1"],"id-2":["id-2"]},"duration":-1,"speed":100}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+        </div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/css/lightgallery-bundle.min.css"><script type="text/javascript" src="https://.disqus.com/embed.js" defer></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/autocomplete.js@0.38.1/dist/autocomplete.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lunr@2.3.9/lunr.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/lightgallery.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/plugins/thumbnail/lg-thumbnail.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/plugins/zoom/lg-zoom.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.5.1/sharer.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/typeit@8.6.0/dist/index.umd.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":50},"comment":{},"data":{"id-1":"Yufan's Blog","id-2":"Yufan's Blog"},"lightgallery":true,"search":{"highlightTag":"em","lunrIndexURL":"/index.json","maxResultLength":10,"noResultsFound":"No results found","snippetLength":30,"type":"lunr"},"typeit":{"cursorChar":"|","cursorSpeed":1000,"data":{"id-1":["id-1"],"id-2":["id-2"]},"duration":-1,"speed":100}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
 </html>

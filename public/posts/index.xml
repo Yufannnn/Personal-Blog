@@ -4,15 +4,50 @@
         <link>http://yufannnn.github.io/posts/</link>
         <description>All Posts | Yufan&#39;s Blog</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>e0773591@u.nus.edu (Zhu Yufan)</managingEditor>
-            <webMaster>e0773591@u.nus.edu (Zhu Yufan)</webMaster><copyright>Zhu Yufan 2022</copyright><lastBuildDate>Mon, 14 Nov 2022 00:00:00 &#43;0000</lastBuildDate><atom:link href="http://yufannnn.github.io/posts/" rel="self" type="application/rss+xml" /><item>
-    <title>My Experience of being a Teaching Assistant in School of Computing :thinking:</title>
+            <webMaster>e0773591@u.nus.edu (Zhu Yufan)</webMaster><copyright>Zhu Yufan 2022</copyright><lastBuildDate>Sun, 02 Jul 2023 00:00:00 &#43;0000</lastBuildDate><atom:link href="http://yufannnn.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>My Journey with Morning Duty Companion</title>
+    <link>http://yufannnn.github.io/posts/morningdutycompanion/morningdutycompnaion/</link>
+    <pubDate>Sun, 02 Jul 2023 00:00:00 &#43;0000</pubDate>
+    <author>Zhu Yufan</author>
+    <guid>http://yufannnn.github.io/posts/morningdutycompanion/morningdutycompnaion/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/Morning.png" referrerpolicy="no-referrer">
+            </div>Introduction 🌄 I am excited to share my journey of creating Morning Duty Companion, a simple but useful tool designed to assist RIB RAs with routine morning duty. 🚀
+The Inspiration 💡 The idea for Morning Duty Companion extends from Night Duty Companion, a successful app I previously developed to streamline night duty management. Recognizing the challenges faced by RAs during morning duty checks, I decided to tackle this aspect and create a solution that simplifies and enhances the process.]]></description>
+</item>
+<item>
+    <title>My Journey with Night Duty Companion 🌙</title>
+    <link>http://yufannnn.github.io/posts/nightdutycompanion/nightdutycompanion/</link>
+    <pubDate>Sun, 18 Jun 2023 00:00:00 &#43;0000</pubDate>
+    <author>Zhu Yufan</author>
+    <guid>http://yufannnn.github.io/posts/nightdutycompanion/nightdutycompanion/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/Night.jpg" referrerpolicy="no-referrer">
+            </div>Introduction 🚀 I am excited to share my journey of creating Night Duty Companion, a simple but powerful tool designed to facilitate Raffles Institution Boarding (RIB) night duties. As a passionate computer science enthusiast and developer, I found this project to be a perfect opportunity to combine my love for programming with my desire to build something genuinely helpful for my life and community.
+The Inspiration 💡 The idea for Night Duty Companion originated from my experiences as a Residential Assistant at Raffles Institution Boarding School.]]></description>
+</item>
+<item>
+    <title>The Influence of Coach Greg Doucette: A Humble Realization in My Fitness Journey</title>
+    <link>http://yufannnn.github.io/posts/cardio/cardio/</link>
+    <pubDate>Sat, 25 Mar 2023 00:00:00 &#43;0000</pubDate>
+    <author>Zhu Yufan</author>
+    <guid>http://yufannnn.github.io/posts/cardio/cardio/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/balance.jpg" referrerpolicy="no-referrer">
+            </div>Striking the Balance: Cardiovascular and Strength Training in My Fitness Journey 💪🚴‍♂️ In my pursuit of fitness, I&rsquo;ve discovered a transformative realization that has become the cornerstone of my journey: the importance of striking the perfect balance between cardiovascular and strength training.
+A Focused Pursuit As a dedicated fitness enthusiast, I initially immersed myself in rigorous strength training, eager to see visible results. While this approach yielded satisfying outcomes, it inadvertently overshadowed the significance of cardiovascular exercises for overall well-being.]]></description>
+</item>
+<item>
+    <title>My Experience as a Teaching Assistant in the School of Computing</title>
     <link>http://yufannnn.github.io/posts/ta/ta/</link>
     <pubDate>Mon, 14 Nov 2022 00:00:00 &#43;0000</pubDate>
     <author>Zhu Yufan</author>
     <guid>http://yufannnn.github.io/posts/ta/ta/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/TA.jpg" referrerpolicy="no-referrer">
-            </div><p>Last week, I finished conducting my last tutorial session and makring last set of homework as A Teaching Assitant in School of Computing. I want to write this post to share my experienceof being a Teaching Assitant and how did I got an offer from SOC.</p>]]></description>
+            </div>Last week, I completed my journey as a Teaching Assistant (TA) in the School of Computing. This role has been a valuable and rewarding experience, and I want to share my journey as a TA, including how I got the position and the insights I gained from this opportunity. 🎓
+The Module I Taught I served as a TA for the module CS1101S Programming Methodology. 🖥️
+CS1101S introduces the concepts of programming and computational problem-solving.]]></description>
 </item>
 <item>
     <title>Unexpected Use of Zobrist Hashing :eyes:</title>
@@ -22,47 +57,49 @@
     <guid>http://yufannnn.github.io/posts/zobrist/zobrist/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/Zobrist.jpg" referrerpolicy="no-referrer">
-            </div><p>This post is kind of a following up to the previous post. I found a surprising question where Zobrist hashing is applicable. Alert: this post is going to be a bit technical!</p>]]></description>
+            </div>I&rsquo;m excited to share a surprising discovery I made while working on a programming assignment for the CS3230 module, Design and Analysis of Algorithms, at NUS. This revelation involves the unexpected application of Zobrist Hashing, a technique primarily designed for board games, to efficiently solve a challenging problem unrelated to gaming. Get ready for a bit of technical insight!
+Revisiting Zobrist Hashing 🕹️ In my previous post, I shared my experiences developing an AI agent to play the board game &ldquo;Breakthrough&rdquo; for the CS2109S individual project.]]></description>
 </item>
 <item>
-    <title>Detours I Have Taken When Trying to Build Muscle :worried:</title>
+    <title>Detours I Have Taken When Trying to Build Muscle 😔</title>
     <link>http://yufannnn.github.io/posts/detour/detour/</link>
     <pubDate>Thu, 22 Sep 2022 00:00:00 &#43;0000</pubDate>
     <author>Zhu Yufan</author>
     <guid>http://yufannnn.github.io/posts/detour/detour/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/Fail.png" referrerpolicy="no-referrer">
-            </div><p>Some major mistakes that I have made when trying to build muscle for the pass few year. I want to note them down here so as to remind myself not to make them again. Hopefully, the lessos I learnt can also help others who are facing similar situations.</p>]]></description>
+            </div><p>Hey there, fellow fitness enthusiasts! Let&rsquo;s talk about the major mistakes I&rsquo;ve made during my muscle-building journey. I&rsquo;m sharing them here as valuable lessons to avoid repeating. We&rsquo;re all in this together, and I hope my experiences can help you too! 💪🚀</p>]]></description>
 </item>
 <item>
-    <title>The power of Iterative Deepening Minimax search with Alpha Beta Pruning :boom:</title>
+    <title>The Power of Iterative Deepening Minimax Search with Alpha-Beta Pruning 💥</title>
     <link>http://yufannnn.github.io/posts/minimax/minimax/</link>
     <pubDate>Sun, 11 Sep 2022 00:00:00 &#43;0000</pubDate>
     <author>Zhu Yufan</author>
     <guid>http://yufannnn.github.io/posts/minimax/minimax/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/Minimax.png" referrerpolicy="no-referrer">
-            </div><p>I did a mini project when taking CS2109s (Introduction to AI and ML), where I built an AI agent for a simple board game, Breakthrough, with iterative deepening minimax search algorithm. What it can achieve blew my mind!</p>]]></description>
+            </div><p>In my pursuit of knowledge in Computer Science, I undertook a mini-project during the course CS2109s (Introduction to AI and ML). The project aimed to build an AI agent for a simple yet intriguing board game called Breakthrough, implementing the iterative deepening minimax search algorithm with alpha-beta pruning. The capabilities of this AI agent left me amazed and eager to share my journey with you! 🌐🔍</p>]]></description>
 </item>
 <item>
-    <title>First Time Benching 90KG for 6 reps :muscle:</title>
+    <title>First Time Benching 90KG for 6 Reps! 💪</title>
     <link>http://yufannnn.github.io/posts/benching90/benching90/</link>
     <pubDate>Sun, 05 Jun 2022 00:00:00 &#43;0000</pubDate>
     <author>Zhu Yufan</author>
     <guid>http://yufannnn.github.io/posts/benching90/benching90/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/Press.jpg" referrerpolicy="no-referrer">
-            </div><p>Nothing too much about this post, just a short post to celebreate and remember the day when I manage to bench 90KG for reps 💪</p>]]></description>
+            </div>Today was a special day in my fitness journey – I managed to bench press 90KG for 6 reps! 💪 I&rsquo;m excited to share this milestone with you all, and let&rsquo;s take a moment to celebrate together! 🎉
+A Journey of Ups and Downs 😊 Over the past one and a half years, life threw some challenges my way – with the pandemic and gym restrictions, it wasn&rsquo;t easy to maintain my regular training.]]></description>
 </item>
 <item>
-    <title>My Experience of Matriculation to NUS Computer Science :sunglasses:</title>
+    <title>My Journey to NUS Computer Science and the S&amp;T Scholarship 🕶️</title>
     <link>http://yufannnn.github.io/posts/matriculation/nuscs/</link>
     <pubDate>Sat, 26 Feb 2022 00:00:00 &#43;0000</pubDate>
     <author>Zhu Yufan</author>
     <guid>http://yufannnn.github.io/posts/matriculation/nuscs/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/SOC.jpg" referrerpolicy="no-referrer">
-            </div><p>Check out this post to find out how did I get accept by NUS CS and receive the S&amp;T Merit Scholarship. This post may be expecially applicable for international students study in Singapore.</p>]]></description>
+            </div><p>Welcome to my post, where I share my experience of getting accepted into NUS Computer Science and being awarded the prestigious S&amp;T Merit Scholarship. This journey might be especially relevant for international students studying in Singapore. 🌍✈️</p>]]></description>
 </item>
 <item>
     <title>Modules that I have taken for each semester in NUS :eyes:</title>
@@ -73,16 +110,6 @@
     <description><![CDATA[<div class="featured-image">
                 <img src="/Mods.jpg" referrerpolicy="no-referrer">
             </div><p>This is not a very formal post, just keeping track of all the modules that I have taken across the years.</p>]]></description>
-</item>
-<item>
-    <title>My First Post! :wink:</title>
-    <link>http://yufannnn.github.io/posts/myfirstpost/myfirstpost/</link>
-    <pubDate>Thu, 13 Jan 2022 00:00:00 &#43;0000</pubDate>
-    <author>Zhu Yufan</author>
-    <guid>http://yufannnn.github.io/posts/myfirstpost/myfirstpost/</guid>
-    <description><![CDATA[<div class="featured-image">
-                <img src="/First.jpg" referrerpolicy="no-referrer">
-            </div><p>Hello world! Yufan here! Come and find out why I want to start this blog and What I will be sharing here. 😆</p>]]></description>
 </item>
 </channel>
 </rss>

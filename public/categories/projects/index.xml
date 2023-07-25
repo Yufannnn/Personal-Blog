@@ -1,0 +1,30 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Projects - Category - Yufan&#39;s Blog</title>
+        <link>http://yufannnn.github.io/categories/projects/</link>
+        <description>Projects - Category - Yufan&#39;s Blog</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>e0773591@u.nus.edu (Zhu Yufan)</managingEditor>
+            <webMaster>e0773591@u.nus.edu (Zhu Yufan)</webMaster><copyright>Zhu Yufan 2022</copyright><lastBuildDate>Sun, 02 Jul 2023 00:00:00 &#43;0000</lastBuildDate><atom:link href="http://yufannnn.github.io/categories/projects/" rel="self" type="application/rss+xml" /><item>
+    <title>My Journey with Morning Duty Companion</title>
+    <link>http://yufannnn.github.io/posts/morningdutycompanion/morningdutycompnaion/</link>
+    <pubDate>Sun, 02 Jul 2023 00:00:00 &#43;0000</pubDate>
+    <author>Zhu Yufan</author>
+    <guid>http://yufannnn.github.io/posts/morningdutycompanion/morningdutycompnaion/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/Morning.png" referrerpolicy="no-referrer">
+            </div>Introduction 🌄 I am excited to share my journey of creating Morning Duty Companion, a simple but useful tool designed to assist RIB RAs with routine morning duty. 🚀
+The Inspiration 💡 The idea for Morning Duty Companion extends from Night Duty Companion, a successful app I previously developed to streamline night duty management. Recognizing the challenges faced by RAs during morning duty checks, I decided to tackle this aspect and create a solution that simplifies and enhances the process.]]></description>
+</item>
+<item>
+    <title>My Journey with Night Duty Companion 🌙</title>
+    <link>http://yufannnn.github.io/posts/nightdutycompanion/nightdutycompanion/</link>
+    <pubDate>Sun, 18 Jun 2023 00:00:00 &#43;0000</pubDate>
+    <author>Zhu Yufan</author>
+    <guid>http://yufannnn.github.io/posts/nightdutycompanion/nightdutycompanion/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/Night.jpg" referrerpolicy="no-referrer">
+            </div>Introduction 🚀 I am excited to share my journey of creating Night Duty Companion, a simple but powerful tool designed to facilitate Raffles Institution Boarding (RIB) night duties. As a passionate computer science enthusiast and developer, I found this project to be a perfect opportunity to combine my love for programming with my desire to build something genuinely helpful for my life and community.
+The Inspiration 💡 The idea for Night Duty Companion originated from my experiences as a Residential Assistant at Raffles Institution Boarding School.]]></description>
+</item>
+</channel>
+</rss>

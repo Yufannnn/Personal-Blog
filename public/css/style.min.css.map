@@ -1,7 +1,7 @@
 {
 	"version": 3,
 	"file": "style.min.css",
-	"sourceRoot": "C:/Users/zhu13/Desktop/blog/yufanblog",
+	"sourceRoot": "D:/AcademicSpace/Personal-Blog/YufanBlog",
 	"sources": [
 		"themes/LoveIt/assets/css/style.scss",
 		"themes/LoveIt/assets/lib/normalize/normalize.css",

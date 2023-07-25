@@ -5,14 +5,14 @@
         <description>algorithm - Tag - Yufan&#39;s Blog</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>e0773591@u.nus.edu (Zhu Yufan)</managingEditor>
             <webMaster>e0773591@u.nus.edu (Zhu Yufan)</webMaster><copyright>Zhu Yufan 2022</copyright><lastBuildDate>Sun, 11 Sep 2022 00:00:00 &#43;0000</lastBuildDate><atom:link href="http://yufannnn.github.io/tags/algorithm/" rel="self" type="application/rss+xml" /><item>
-    <title>The power of Iterative Deepening Minimax search with Alpha Beta Pruning :boom:</title>
+    <title>The Power of Iterative Deepening Minimax Search with Alpha-Beta Pruning 💥</title>
     <link>http://yufannnn.github.io/posts/minimax/minimax/</link>
     <pubDate>Sun, 11 Sep 2022 00:00:00 &#43;0000</pubDate>
     <author>Zhu Yufan</author>
     <guid>http://yufannnn.github.io/posts/minimax/minimax/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/Minimax.png" referrerpolicy="no-referrer">
-            </div><p>I did a mini project when taking CS2109s (Introduction to AI and ML), where I built an AI agent for a simple board game, Breakthrough, with iterative deepening minimax search algorithm. What it can achieve blew my mind!</p>]]></description>
+            </div><p>In my pursuit of knowledge in Computer Science, I undertook a mini-project during the course CS2109s (Introduction to AI and ML). The project aimed to build an AI agent for a simple yet intriguing board game called Breakthrough, implementing the iterative deepening minimax search algorithm with alpha-beta pruning. The capabilities of this AI agent left me amazed and eager to share my journey with you! 🌐🔍</p>]]></description>
 </item>
 </channel>
 </rss>
