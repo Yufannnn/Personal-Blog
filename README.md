@@ -2,6 +2,8 @@
 
 Welcome to my personal blog website! My name is Yufan, and I'm excited to share my experiences in the fields of Computer Science and Fitness with you. This website is built using the Hugo framework and hosted on AWS S3 to bring my thoughts and knowledge to the online community.
 
+![image](Blog.png)
+
 ## About Me
 
 I'm a passionate individual with a keen interest in both Computer Science and Fitness. As a computer science enthusiast, I love exploring algorithms, programming languages, and all things tech-related. On the other hand, my dedication to fitness has led me to delve into various training methods and exercises to improve my overall health and well-being.
